@@ -1,0 +1,242 @@
+// Comprehensive English & Hindi Bilingual Dictionaries for Roots_Bloom
+
+export const TRANSLATIONS = {
+  en: {
+    // Brand & Top Header
+    brandName: "Roots_Bloom",
+    tagline: "Handcrafted Miniature Gardens & Emotional Planters",
+    searchPlaceholder: "Search miniature gardens, Maa-Beti planters, Bonsai...",
+    deliveringTo: "Delivering to",
+    change: "Change",
+    enterPincode: "Enter Pincode",
+    checkPincode: "Check Pincode",
+    language: "English",
+    switchToHindi: "हिंदी",
+    
+    // Navigation
+    home: "Home",
+    categories: "Categories",
+    wishlist: "Wishlist",
+    orders: "Orders",
+    account: "Account",
+    cart: "Cart",
+    
+    // Banners & Shelves
+    shopByFeeling: "Shop by Feeling & Emotion",
+    bestSellers: "Best Sellers in Living Planters",
+    viewAll: "View All",
+    addToCart: "Add to Cart",
+    buyNow: "Buy Now",
+    addedToCart: "Added to Cart!",
+    
+    // Product Specs & Trust
+    freeDelivery: "Free Delivery",
+    codAvailable: "COD Available",
+    livePlantGuarantee: "Live Plant 100% Safe Transit Guarantee",
+    verifiedHandcrafted: "100% Handcrafted Live Plant",
+    inclusiveTaxes: "Inclusive of all taxes",
+    keySpecifications: "Key Specifications",
+    botanicalCare: "Botanical Plant Care Guide",
+    sunlightRequirement: "Sunlight",
+    wateringSchedule: "Watering",
+    soilType: "Soil & Medium",
+    temperature: "Temperature",
+    unboxingReviews: "Customer Reviews & Unboxing Photos",
+    verifiedPurchase: "Verified Purchase",
+    writeReview: "Write a Review",
+    frequentlyBoughtTogether: "Frequently Bought Together",
+    addBothToCart: "Add Bundle to Cart",
+    
+    // Cart & Checkout
+    yourCart: "Your Cart",
+    emptyCart: "Your cart is empty",
+    explorePlants: "Explore Handcrafted Planters",
+    applyCoupon: "Apply Promo Code",
+    couponApplied: "Coupon Applied!",
+    subtotal: "Item Subtotal",
+    deliveryFee: "Delivery Fee",
+    codFee: "COD Handling Fee",
+    free: "FREE",
+    discount: "Discount Savings",
+    totalAmount: "Total Payable",
+    proceedToCheckout: "Proceed to Checkout",
+    
+    // Single-Page Checkout
+    checkoutTitle: "Single-Page Checkout",
+    step1Address: "1. Delivery Address",
+    step2Payment: "2. Payment Method",
+    step3Review: "3. Review & Place Order",
+    addNewAddress: "Add New Address",
+    cashOnDelivery: "Cash on Delivery (COD)",
+    codSubtext: "Pay with cash or UPI on delivery",
+    upiPayment: "UPI Instant Payment (GPay, PhonePe, Paytm)",
+    cardPayment: "Credit / Debit Card",
+    netBanking: "Net Banking",
+    placeOrder: "Place Order",
+    
+    // Order Success & Tracking
+    orderConfirmed: "Order Placed Successfully!",
+    orderId: "Order ID",
+    estimatedDelivery: "Estimated Delivery",
+    trackOrder: "Track Live Order",
+    shareWithFamily: "Share on WhatsApp with Family",
+    orderPlaced: "Order Placed",
+    beingHandcrafted: "Being Handcrafted for You",
+    packedDispatched: "Packed & Dispatched",
+    outForDelivery: "Out for Delivery",
+    delivered: "Delivered",
+    
+    // Filters & PLP
+    filters: "Filters",
+    clearAll: "Clear All Filters",
+    sortBy: "Sort By",
+    popularity: "Popularity",
+    priceLowHigh: "Price: Low to High",
+    priceHighLow: "Price: High to Low",
+    customerRating: "Customer Rating 4★+",
+    newArrivals: "New Arrivals",
+    priceRange: "Price Range",
+    careLevel: "Care Level",
+    easyCare: "Easy Care",
+    allProducts: "All Products",
+    noProductsFound: "No matching planters found for the selected filters",
+    tryAdjustingFilters: "Try adjusting or clearing your filters to see more results.",
+    
+    // Referral
+    referAndEarn: "Share & Earn ₹150",
+    referralSubtext: "Give friends ₹100 off their first order. You get ₹150 store credits on their delivery.",
+    copyLink: "Copy Link",
+    shareWhatsApp: "Share on WhatsApp",
+    linkCopied: "Referral Link Copied!",
+    
+    // Account & Profile
+    myAccount: "My Account",
+    myOrders: "My Orders",
+    savedAddresses: "Saved Addresses",
+    helpSupport: "Help & WhatsApp Support",
+    loginSignup: "Login / Sign Up",
+    enterMobile: "Enter 10-Digit Mobile Number",
+    getOtp: "Get OTP",
+    verifyOtp: "Verify OTP",
+    enterOtp: "Enter 6-Digit OTP"
+  },
+  hi: {
+    // Brand & Top Header
+    brandName: "Roots_Bloom",
+    tagline: "हस्तनिर्मित मिनिएचर गार्डन्स और इमोशनल प्लांटर्स",
+    searchPlaceholder: "सर्च करें मिनिएचर गार्डन्स, माँ-बेटी प्लांटर्स, बोन्साई...",
+    deliveringTo: "डिलीवरी पिनकोड",
+    change: "बदलें",
+    enterPincode: "पिनकोड दर्ज करें",
+    checkPincode: "पिनकोड चेक करें",
+    language: "हिंदी",
+    switchToHindi: "English",
+    
+    // Navigation
+    home: "होम",
+    categories: "कैटलॉग",
+    wishlist: "विशलिस्ट",
+    orders: "ऑर्डर्स",
+    account: "अकाउंट",
+    cart: "कार्ट",
+    
+    // Banners & Shelves
+    shopByFeeling: "भावनाओं और रिश्तों के अनुसार चुनें",
+    bestSellers: "सबसे लोकप्रिय जीवंत प्लांटर्स",
+    viewAll: "सभी देखें",
+    addToCart: "कार्ट में डालें",
+    buyNow: "अभी खरीदें",
+    addedToCart: "कार्ट में जोड़ा गया!",
+    
+    // Product Specs & Trust
+    freeDelivery: "मुफ़्त डिलीवरी",
+    codAvailable: "कैश ऑन डिलीवरी उपलब्ध",
+    livePlantGuarantee: "जीवित पौधे की 100% सुरक्षित ट्रांजिट गारंटी",
+    verifiedHandcrafted: "100% हस्तनिर्मित जीवित पौधा",
+    inclusiveTaxes: "सभी कर सहित",
+    keySpecifications: "मुख्य विशेषताएं एवं विवरण",
+    botanicalCare: "पौधे की देखभाल गाइड",
+    sunlightRequirement: "धूप की आवश्यकता",
+    wateringSchedule: "पानी देने का समय",
+    soilType: "मिट्टी और माध्यम",
+    temperature: "तापमान",
+    unboxingReviews: "ग्राहकों के अनुभव और तस्वीरें",
+    verifiedPurchase: "वेरिफाइड खरीदार",
+    writeReview: "रिव्यू लिखें",
+    frequentlyBoughtTogether: "अक्सर साथ में खरीदे जाने वाले",
+    addBothToCart: "बंडल कार्ट में जोड़ें",
+    
+    // Cart & Checkout
+    yourCart: "आपकी कार्ट",
+    emptyCart: "आपकी कार्ट अभी खाली है",
+    explorePlants: "हस्तनिर्मित प्लांटर्स देखें",
+    applyCoupon: "प्रोमो कोड लागू करें",
+    couponApplied: "कूपन लागू हो गया!",
+    subtotal: "वस्तुओं का मूल्य",
+    deliveryFee: "डिलीवरी शुल्क",
+    codFee: "COD हैंडलिंग शुल्क",
+    free: "मुफ़्त",
+    discount: "डिस्काउंट छूट",
+    totalAmount: "कुल देय राशि",
+    proceedToCheckout: "चेकआउट की ओर बढ़ें",
+    
+    // Single-Page Checkout
+    checkoutTitle: "सिंगल-पेज चेकआउट",
+    step1Address: "1. डिलीवरी का पता",
+    step2Payment: "2. भुगतान का तरीका",
+    step3Review: "3. समीक्षा और ऑर्डर करें",
+    addNewAddress: "नया पता जोड़ें",
+    cashOnDelivery: "कैश ऑन डिलीवरी (COD)",
+    codSubtext: "डिलीवरी पर नकद या UPI द्वारा भुगतान करें",
+    upiPayment: "UPI तुरंत भुगतान (GPay, PhonePe, Paytm)",
+    cardPayment: "क्रेडिट / डेबिट कार्ड",
+    netBanking: "नेट बैंकिंग",
+    placeOrder: "ऑर्डर सबमिट करें",
+    
+    // Order Success & Tracking
+    orderConfirmed: "ऑर्डर सफलतापूर्वक दर्ज हुआ!",
+    orderId: "ऑर्डर आईडी",
+    estimatedDelivery: "अनुमानित डिलीवरी",
+    trackOrder: "लाइव ऑर्डर ट्रैक करें",
+    shareWithFamily: "व्हाट्सएप पर परिवार के साथ साझा करें",
+    orderPlaced: "ऑर्डर प्राप्त हुआ",
+    beingHandcrafted: "आपके लिए हस्तनिर्मित तैयार हो रहा है",
+    packedDispatched: "पैक और रवाना",
+    outForDelivery: "डिलीवरी के लिए निकल चुका है",
+    delivered: "सफलतापूर्वक डिलीवर",
+    
+    // Filters & PLP
+    filters: "फिल्टर्स",
+    clearAll: "सभी फ़िल्टर साफ़ करें",
+    sortBy: "क्रमबद्ध करें",
+    popularity: "लोकप्रियता",
+    priceLowHigh: "मूल्य: कम से अधिक",
+    priceHighLow: "मूल्य: अधिक से कम",
+    customerRating: "ग्राहक रेटिंग 4★+",
+    newArrivals: "नए उत्पाद",
+    priceRange: "मूल्य सीमा",
+    careLevel: "देखभाल स्तर",
+    easyCare: "आसान देखभाल",
+    allProducts: "सभी उत्पाद",
+    noProductsFound: "चुने गए फ़िल्टर के लिए कोई प्लांटर नहीं मिला",
+    tryAdjustingFilters: "अधिक परिणाम देखने के लिए फ़िल्टर बदलें या साफ़ करें।",
+    
+    // Referral
+    referAndEarn: "शेयर करें और ₹150 कमाएं",
+    referralSubtext: "मित्रों को पहले ऑर्डर पर ₹100 की छूट दें और उनके डिलीवरी पर पाएं ₹150 स्टोर क्रेडिट।",
+    copyLink: "लिंक कॉपी करें",
+    shareWhatsApp: "व्हाट्सएप पर शेयर करें",
+    linkCopied: "रेफरल लिंक कॉपी हो गया!",
+    
+    // Account & Profile
+    myAccount: "मेरा अकाउंट",
+    myOrders: "मेरे ऑर्डर्स",
+    savedAddresses: "सहेजे गए पते",
+    helpSupport: "सहायता एवं व्हाट्सएप सपोर्ट",
+    loginSignup: "लॉगिन / साइन अप",
+    enterMobile: "10-अंकों का मोबाइल नंबर दर्ज करें",
+    getOtp: "OTP प्राप्त करें",
+    verifyOtp: "OTP सत्यापित करें",
+    enterOtp: "6-अंकों का OTP दर्ज करें"
+  }
+};
