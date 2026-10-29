@@ -20,6 +20,7 @@ export const TRANSLATIONS = {
     orders: "Orders",
     account: "Account",
     cart: "Cart",
+    back: "Back",
     
     // Banners & Shelves
     shopByFeeling: "Shop by Feeling & Emotion",
@@ -99,6 +100,7 @@ export const TRANSLATIONS = {
     careLevel: "Care Level",
     easyCare: "Easy Care",
     allProducts: "All Products",
+    applyFilters: "Apply Filters",
     noProductsFound: "No matching planters found for the selected filters",
     tryAdjustingFilters: "Try adjusting or clearing your filters to see more results.",
     
@@ -139,6 +141,7 @@ export const TRANSLATIONS = {
     orders: "ऑर्डर्स",
     account: "अकाउंट",
     cart: "कार्ट",
+    back: "वापस",
     
     // Banners & Shelves
     shopByFeeling: "भावनाओं और रिश्तों के अनुसार चुनें",
@@ -218,6 +221,7 @@ export const TRANSLATIONS = {
     careLevel: "देखभाल स्तर",
     easyCare: "आसान देखभाल",
     allProducts: "सभी उत्पाद",
+    applyFilters: "फ़िल्टर लागू करें",
     noProductsFound: "चुने गए फ़िल्टर के लिए कोई प्लांटर नहीं मिला",
     tryAdjustingFilters: "अधिक परिणाम देखने के लिए फ़िल्टर बदलें या साफ़ करें।",
     

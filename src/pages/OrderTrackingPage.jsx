@@ -12,11 +12,12 @@ import {
   MessageSquare,
   ChevronRight,
   ShieldCheck,
-  RefreshCw
+  RefreshCw,
+  ArrowLeft
 } from 'lucide-react';
 
 export const OrderTrackingPage = () => {
-  const { activeOrderId, orders, navigateTo, lang, t, showToast } = useApp();
+  const { activeOrderId, orders, navigateTo, goBack, lang, t, showToast } = useApp();
 
   const currentOrder = orders.find((o) => o.orderId === activeOrderId) || orders[0];
 
@@ -73,8 +74,17 @@ export const OrderTrackingPage = () => {
   return (
     <div className="order-tracking-page py-4">
       <div className="container max-w-2xl mx-auto">
-        {/* Breadcrumb */}
-        <div className="breadcrumb-bar mb-3">
+        {/* Breadcrumb & Back */}
+        <div className="breadcrumb-bar mb-3 flex items-center gap-1.5">
+          <button 
+            onClick={goBack} 
+            className="pdp-back-btn mr-1 flex items-center gap-1"
+            title={t('back')}
+          >
+            <ArrowLeft size={16} />
+            <span>{t('back')}</span>
+          </button>
+          <span className="text-muted text-xs">/</span>
           <button onClick={() => navigateTo('home')} className="breadcrumb-link">{t('home')}</button>
           <ChevronRight size={14} className="text-muted" />
           <button onClick={() => navigateTo('account')} className="breadcrumb-link">{t('orders')}</button>

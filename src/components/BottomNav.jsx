@@ -1,10 +1,16 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
+import { PRODUCTS } from '../data/catalog';
 import { Home, Grid, Heart, Package, User } from 'lucide-react';
 
 export const BottomNav = () => {
   const { currentPage, navigateTo, cart, wishlist, t } = useApp();
-  const wishlistCount = wishlist.length;
+  const wishlistCount = wishlist.filter((id) => PRODUCTS.some((p) => p.id === id)).length;
+
+  // On PDP and Checkout, mobile sticky CTA takes full precedence so they do not overlap
+  if (currentPage === 'pdp' || currentPage === 'checkout') {
+    return null;
+  }
 
   return (
     <nav className="bottom-nav">

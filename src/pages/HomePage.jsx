@@ -3,12 +3,12 @@ import { useApp } from '../context/AppContext';
 import { PRODUCTS, CATEGORIES, EMOTIONAL_SHELVES, HERO_SLIDES } from '../data/catalog';
 import { ProductCard } from '../components/ProductCard';
 import { TrustBar } from '../components/TrustBar';
-import { 
-  ChevronRight, 
-  ChevronLeft, 
-  Sparkles, 
-  HeartHandshake, 
-  Flame, 
+import {
+  ChevronRight,
+  ChevronLeft,
+  Sparkles,
+  HeartHandshake,
+  Flame,
   ArrowRight,
   ShieldCheck,
   Award
@@ -50,7 +50,7 @@ export const HomePage = () => {
       {/* Hero Banner Carousel */}
       <section className="hero-carousel-section">
         <div className="container">
-          <div 
+          <div
             className="hero-slide-card"
             style={{ background: currentHero.bg }}
           >
@@ -67,7 +67,7 @@ export const HomePage = () => {
                   {lang === 'hi' ? currentHero.subtitle_hi : currentHero.subtitle}
                 </p>
                 <div className="hero-cta-wrap">
-                  <button 
+                  <button
                     className="btn btn-buy-now btn-lg"
                     onClick={() => navigateTo('pdp', { productId: currentHero.link })}
                   >
@@ -78,10 +78,10 @@ export const HomePage = () => {
               </div>
 
               <div className="hero-image-wrap">
-                <img 
-                  src={currentHero.image} 
-                  alt={currentHero.title} 
-                  className="hero-product-img" 
+                <img
+                  src={currentHero.image}
+                  alt={currentHero.title}
+                  className="hero-product-img"
                 />
               </div>
             </div>
@@ -114,7 +114,7 @@ export const HomePage = () => {
                 {lang === 'hi' ? 'हर रिश्ता और अवसर के लिए विशेष रूप से तैयार किए गए लाइव प्लांटर्स' : 'Living botanical gifts curated for relationships, gratitude & celebrations'}
               </p>
             </div>
-            <button 
+            <button
               className="section-link"
               onClick={() => navigateTo('category', { category: 'theme-planters' })}
             >
@@ -134,8 +134,8 @@ export const HomePage = () => {
                   </div>
                   <div className="shelf-products-row">
                     {shelfProducts.map((product) => (
-                      <div 
-                        key={product.id} 
+                      <div
+                        key={product.id}
                         className="shelf-mini-item"
                         onClick={() => navigateTo('pdp', { productId: product.id })}
                       >
@@ -167,7 +167,7 @@ export const HomePage = () => {
                 {lang === 'hi' ? 'ग्राहकों द्वारा सबसे ज्यादा पसंद किए गए टॉप-रेटेड मिनिएचर गार्डन्स' : 'Highest rated handcrafted living plant arrangements with verified buyer reviews'}
               </p>
             </div>
-            <button 
+            <button
               className="section-link"
               onClick={() => navigateTo('category', { category: 'all' })}
             >

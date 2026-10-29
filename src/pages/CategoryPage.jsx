@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { useApp } from '../context/AppContext';
 import { PRODUCTS, CATEGORIES } from '../data/catalog';
 import { ProductCard } from '../components/ProductCard';
@@ -10,7 +10,10 @@ import {
   Sparkles, 
   Plus, 
   ShoppingBag,
-  SlidersHorizontal
+  SlidersHorizontal,
+  ArrowLeft,
+  X,
+  Filter
 } from 'lucide-react';
 
 export const CategoryPage = () => {
@@ -20,6 +23,7 @@ export const CategoryPage = () => {
     searchQuery, 
     setSearchQuery,
     navigateTo, 
+    goBack,
     lang, 
     t,
     addToCart 
@@ -99,18 +103,47 @@ export const CategoryPage = () => {
   const activeCategoryObj = CATEGORIES.find((c) => c.id === activeCategory) || CATEGORIES[0];
   const activeCategoryTitle = lang === 'hi' ? activeCategoryObj.name_hi : activeCategoryObj.name;
 
+  const activeFilterCount = (activeCategory !== 'all' ? 1 : 0) +
+    (priceRange !== 'all' ? 1 : 0) +
+    (minRating > 0 ? 1 : 0) +
+    (careFilter !== 'all' ? 1 : 0);
+
+  // Lock scroll when mobile filter is open
+  useEffect(() => {
+    if (isMobileFilterOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMobileFilterOpen]);
+
   return (
     <div className="category-page-container py-4">
       <div className="container">
-        {/* Breadcrumb Navigation */}
-        <div className="breadcrumb-bar mb-3">
-          <button onClick={() => navigateTo('home')} className="breadcrumb-link">
-            {t('home')}
-          </button>
-          <ChevronRight size={14} className="text-muted" />
-          <span className="breadcrumb-current">
-            {searchQuery ? `${lang === 'hi' ? 'खोज:' : 'Search:'} "${searchQuery}"` : activeCategoryTitle}
-          </span>
+        {/* Breadcrumb Navigation & Back Button */}
+        <div className="breadcrumb-bar mb-3 flex items-center justify-between flex-wrap gap-2">
+          <div className="flex items-center gap-1.5 flex-wrap">
+            <button 
+              onClick={goBack} 
+              className="pdp-back-btn mr-1 flex items-center gap-1"
+              title={t('back')}
+              aria-label="Go Back"
+            >
+              <ArrowLeft size={16} />
+              <span className="font-bold text-xs">{t('back')}</span>
+            </button>
+            <span className="text-muted text-xs">/</span>
+            <button onClick={() => navigateTo('home')} className="breadcrumb-link">
+              {t('home')}
+            </button>
+            <ChevronRight size={14} className="text-muted" />
+            <span className="breadcrumb-current">
+              {searchQuery ? `${lang === 'hi' ? 'खोज:' : 'Search:'} "${searchQuery}"` : activeCategoryTitle}
+            </span>
+          </div>
         </div>
 
         {/* Category Header & Sort Controls */}
@@ -127,11 +160,15 @@ export const CategoryPage = () => {
           <div className="plp-controls flex items-center gap-2">
             {/* Mobile Filter Trigger */}
             <button 
-              className="btn btn-outline-neutral btn-sm mobile-filter-btn flex items-center gap-1"
-              onClick={() => setIsMobileFilterOpen(!isMobileFilterOpen)}
+              className={`btn btn-outline-neutral btn-sm mobile-filter-btn flex items-center gap-1.5 ${activeFilterCount > 0 ? 'border-forest font-bold text-forest' : ''}`}
+              onClick={() => setIsMobileFilterOpen(true)}
+              aria-label="Open Filters"
             >
               <SlidersHorizontal size={14} />
               <span>{t('filters')}</span>
+              {activeFilterCount > 0 && (
+                <span className="filter-badge-pill">{activeFilterCount}</span>
+              )}
             </button>
 
             {/* Sort Dropdown */}
@@ -225,6 +262,77 @@ export const CategoryPage = () => {
           </div>
         </div>
       </div>
+
+      {/* Mobile Filter Slide-Up Bottom Sheet Drawer */}
+      {isMobileFilterOpen && (
+        <div className="mobile-filter-drawer-wrapper">
+          <div 
+            className="mobile-filter-backdrop" 
+            onClick={() => setIsMobileFilterOpen(false)}
+          />
+          <div className="mobile-filter-drawer">
+            <div className="mobile-filter-header">
+              <div className="flex items-center gap-1.5 flex-1 min-w-0">
+                <SlidersHorizontal size={17} className="text-forest flex-shrink-0" />
+                <h3 className="font-bold text-sm text-dark">{t('filters')}</h3>
+                {activeFilterCount > 0 && (
+                  <span className="filter-badge-pill">{activeFilterCount}</span>
+                )}
+                <span className="text-xs text-muted truncate">
+                  ({filteredProducts.length})
+                </span>
+              </div>
+              <div className="flex items-center gap-2 flex-shrink-0">
+                {activeFilterCount > 0 && (
+                  <button 
+                    className="filter-clear-btn"
+                    onClick={handleResetFilters}
+                  >
+                    {lang === 'hi' ? 'साफ़ करें' : 'Clear All'}
+                  </button>
+                )}
+                <button 
+                  className="mobile-filter-close-btn"
+                  onClick={() => setIsMobileFilterOpen(false)}
+                  aria-label="Close Filters"
+                >
+                  <X size={18} />
+                </button>
+              </div>
+            </div>
+
+            <div className="mobile-filter-body">
+              <FilterSidebar
+                selectedCategory={activeCategory}
+                onSelectCategory={(catId) => setActiveCategory(catId)}
+                priceRange={priceRange}
+                onPriceChange={(val) => setPriceRange(val)}
+                minRating={minRating}
+                onRatingChange={(val) => setMinRating(val)}
+                careFilter={careFilter}
+                onCareFilterChange={(val) => setCareFilter(val)}
+                onResetFilters={handleResetFilters}
+                totalResults={filteredProducts.length}
+              />
+            </div>
+
+            <div className="mobile-filter-footer">
+              <button 
+                className="btn btn-outline-neutral flex-1 py-2.5"
+                onClick={handleResetFilters}
+              >
+                {t('clearAll')}
+              </button>
+              <button 
+                className="btn btn-primary flex-1 py-2.5"
+                onClick={() => setIsMobileFilterOpen(false)}
+              >
+                {t('applyFilters')} ({filteredProducts.length})
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

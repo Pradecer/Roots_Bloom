@@ -10,7 +10,8 @@ import {
   Banknote, 
   QrCode,
   Lock,
-  ChevronRight
+  ChevronRight,
+  ArrowLeft
 } from 'lucide-react';
 
 export const CheckoutPage = () => {
@@ -26,6 +27,7 @@ export const CheckoutPage = () => {
     setSelectedAddressId, 
     placeOrder, 
     navigateTo, 
+    goBack,
     lang, 
     t,
     showToast 
@@ -69,8 +71,17 @@ export const CheckoutPage = () => {
   return (
     <div className="checkout-page-container py-4">
       <div className="container">
-        {/* Breadcrumb */}
-        <div className="breadcrumb-bar mb-3">
+        {/* Breadcrumb & Back Action */}
+        <div className="breadcrumb-bar mb-3 flex items-center gap-1.5">
+          <button 
+            onClick={goBack} 
+            className="pdp-back-btn mr-1 flex items-center gap-1"
+            title={t('back')}
+          >
+            <ArrowLeft size={16} />
+            <span>{t('back')}</span>
+          </button>
+          <span className="text-muted text-xs">/</span>
           <button onClick={() => navigateTo('cart')} className="breadcrumb-link">{t('cart')}</button>
           <ChevronRight size={14} className="text-muted" />
           <span className="breadcrumb-current">{t('checkoutTitle')}</span>

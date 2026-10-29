@@ -11,7 +11,8 @@ import {
   CheckCircle2, 
   ShieldCheck,
   Sparkles,
-  ChevronRight
+  ChevronRight,
+  ArrowLeft
 } from 'lucide-react';
 
 export const CartPage = () => {
@@ -27,6 +28,7 @@ export const CartPage = () => {
     appliedCoupon, 
     setAppliedCoupon,
     navigateTo, 
+    goBack,
     addToCart,
     showToast,
     lang, 
@@ -84,6 +86,17 @@ export const CartPage = () => {
   return (
     <div className="cart-page-container py-4">
       <div className="container">
+        <div className="breadcrumb-bar mb-3">
+          <button 
+            onClick={goBack} 
+            className="pdp-back-btn flex items-center gap-1"
+            title={t('back')}
+          >
+            <ArrowLeft size={16} />
+            <span>{t('back')}</span>
+          </button>
+        </div>
+
         <h1 className="page-heading mb-4 flex items-center gap-2">
           <ShoppingBag size={22} className="text-forest" />
           <span>{t('yourCart')} ({cartItemsWithDetails.length} {lang === 'hi' ? 'वस्तुएं' : 'items'})</span>

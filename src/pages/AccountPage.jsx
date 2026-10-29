@@ -10,7 +10,8 @@ import {
   LogOut, 
   ChevronRight,
   ShieldCheck,
-  Award
+  Award,
+  ArrowLeft
 } from 'lucide-react';
 
 export const AccountPage = () => {
@@ -20,6 +21,7 @@ export const AccountPage = () => {
     orders, 
     addresses, 
     navigateTo, 
+    goBack,
     toggleLanguage, 
     lang, 
     t, 
@@ -35,6 +37,16 @@ export const AccountPage = () => {
   return (
     <div className="account-page-container py-4">
       <div className="container max-w-2xl mx-auto">
+        <div className="breadcrumb-bar mb-3">
+          <button 
+            onClick={goBack} 
+            className="pdp-back-btn flex items-center gap-1"
+            title={t('back')}
+          >
+            <ArrowLeft size={16} />
+            <span>{t('back')}</span>
+          </button>
+        </div>
         {/* User Profile Card */}
         <div className="user-profile-header-card p-4 border rounded-md bg-white mb-4 flex items-center justify-between flex-wrap gap-3">
           <div className="flex items-center gap-3">

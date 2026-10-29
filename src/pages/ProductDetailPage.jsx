@@ -18,13 +18,17 @@ import {
   Truck,
   Plus,
   MessageCircle,
-  ThumbsUp
+  ThumbsUp,
+  ArrowLeft
 } from 'lucide-react';
+import { CATEGORIES } from '../data/catalog';
 
 export const ProductDetailPage = () => {
   const { 
     selectedProductId, 
     navigateTo, 
+    goBack,
+    activeCategory,
     addToCart, 
     wishlist, 
     toggleWishlist, 
@@ -53,7 +57,6 @@ export const ProductDetailPage = () => {
   const keyFeatures = lang === 'hi' && product.key_features_hi ? product.key_features_hi : product.key_features;
 
   const galleryImages = product.visual_assets.gallery || [product.visual_assets.primary_image];
-  const photoAngles = product.visual_assets.photo_angles || [];
 
   const handleAddToCart = () => {
     addToCart(product.id, 1, true);
@@ -76,13 +79,33 @@ export const ProductDetailPage = () => {
   return (
     <div className="pdp-page-container py-4">
       <div className="container">
-        {/* Breadcrumb Navigation */}
-        <div className="breadcrumb-bar mb-3">
-          <button onClick={() => navigateTo('home')} className="breadcrumb-link">{t('home')}</button>
-          <ChevronRight size={14} className="text-muted" />
-          <button onClick={() => navigateTo('category', { category: 'all' })} className="breadcrumb-link">{productCategory}</button>
-          <ChevronRight size={14} className="text-muted" />
-          <span className="breadcrumb-current">{productName}</span>
+        {/* Breadcrumb Navigation & Prominent Back Action */}
+        <div className="breadcrumb-bar mb-3 flex items-center justify-between flex-wrap gap-2">
+          <div className="flex items-center gap-1.5 flex-wrap">
+            <button 
+              onClick={goBack} 
+              className="pdp-back-btn mr-1 flex items-center gap-1"
+              title={t('back')}
+              aria-label="Go Back"
+            >
+              <ArrowLeft size={16} />
+              <span className="font-bold text-xs">{t('back')}</span>
+            </button>
+            <span className="text-muted text-xs">/</span>
+            <button onClick={() => navigateTo('home')} className="breadcrumb-link">{t('home')}</button>
+            <ChevronRight size={14} className="text-muted" />
+            <button 
+              onClick={() => {
+                const matchCat = CATEGORIES.find((c) => c.categoryKey === product.category || c.name === product.category);
+                navigateTo('category', { category: matchCat ? matchCat.id : 'all' });
+              }} 
+              className="breadcrumb-link"
+            >
+              {productCategory}
+            </button>
+            <ChevronRight size={14} className="text-muted" />
+            <span className="breadcrumb-current">{productName}</span>
+          </div>
         </div>
 
         {/* Main PDP Grid: Gallery (Left) + Details & Purchase (Right) */}
@@ -107,7 +130,7 @@ export const ProductDetailPage = () => {
               />
             </div>
 
-            {/* Thumbnail Strip with Photo Angle Descriptions */}
+            {/* Thumbnail Strip */}
             {galleryImages.length > 1 && (
               <div className="pdp-thumbnail-strip mt-3">
                 {galleryImages.map((img, idx) => (
@@ -115,19 +138,12 @@ export const ProductDetailPage = () => {
                     key={idx}
                     className={`thumbnail-btn ${idx === activeImageIndex ? 'active' : ''}`}
                     onClick={() => setActiveImageIndex(idx)}
-                    title={photoAngles[idx] || `Angle ${idx + 1}`}
+                    title={`Image ${idx + 1}`}
                   >
                     <img src={img} alt="" />
                   </button>
                 ))}
               </div>
-            )}
-
-            {/* Angle Description Label */}
-            {photoAngles[activeImageIndex] && (
-              <p className="photo-angle-caption text-center text-xs text-muted mt-2">
-                📸 {photoAngles[activeImageIndex]}
-              </p>
             )}
 
             {/* Desktop Action Buttons (Sticky Under Gallery) */}
@@ -362,8 +378,8 @@ export const ProductDetailPage = () => {
 
                 <div className="histogram-bars">
                   {[5, 4, 3, 2, 1].map((stars) => {
-                    const count = product.rating.distribution?.[stars] || (stars === 5 ? 80 : 15);
-                    const pct = Math.round((count / product.rating.count) * 100);
+                    const count = product.rating?.distribution?.[stars] || (stars === 5 ? 48 : 12);
+                    const pct = Math.round((count / (product.rating?.count || 1)) * 100);
                     return (
                       <div key={stars} className="histogram-row flex items-center gap-2 text-xs">
                         <span className="w-6">{stars} ★</span>
@@ -379,7 +395,7 @@ export const ProductDetailPage = () => {
 
               {/* Individual Verified Reviews */}
               <div className="reviews-list">
-                {product.reviews.map((rev) => (
+                {(product.reviews || []).map((rev) => (
                   <div key={rev.id} className="review-card p-3 my-2 border rounded-md bg-white">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">

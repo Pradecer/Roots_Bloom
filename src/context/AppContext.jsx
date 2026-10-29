@@ -7,7 +7,7 @@ const AppContext = createContext();
 export const AppProvider = ({ children }) => {
   // Navigation & Page routing
   const [currentPage, setCurrentPage] = useState('home');
-  const [selectedProductId, setSelectedProductId] = useState('fairy-dream-miniature-tray-garden');
+  const [selectedProductId, setSelectedProductId] = useState(() => PRODUCTS[0]?.id || 'shiv-tray-garden');
   const [activeCategory, setActiveCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [activeOrderId, setActiveOrderId] = useState('RB-2026-89412');
@@ -19,25 +19,31 @@ export const AppProvider = ({ children }) => {
   const [pincode, setPincode] = useState(() => localStorage.getItem('rb_pincode') || '110001');
   const [isPincodeModalOpen, setIsPincodeModalOpen] = useState(false);
 
-  // Cart State with LocalStorage
+  // Cart State with LocalStorage (defaults to empty, auto-purges any obsolete dummy items)
   const [cart, setCart] = useState(() => {
     try {
       const saved = localStorage.getItem('rb_cart');
-      return saved ? JSON.parse(saved) : [
-        { productId: 'fairy-dream-miniature-tray-garden', qty: 1 }
-      ];
+      if (!saved) return [];
+      const parsed = JSON.parse(saved);
+      return Array.isArray(parsed)
+        ? parsed.filter((item) => PRODUCTS.some((p) => p.id === item.productId))
+        : [];
     } catch {
-      return [{ productId: 'fairy-dream-miniature-tray-garden', qty: 1 }];
+      return [];
     }
   });
 
-  // Wishlist State with LocalStorage
+  // Wishlist State with LocalStorage (defaults to empty, auto-purges any obsolete dummy items)
   const [wishlist, setWishlist] = useState(() => {
     try {
       const saved = localStorage.getItem('rb_wishlist');
-      return saved ? JSON.parse(saved) : ['maa-beti-emotional-theme-planter'];
+      if (!saved) return [];
+      const parsed = JSON.parse(saved);
+      return Array.isArray(parsed)
+        ? parsed.filter((id) => PRODUCTS.some((p) => p.id === id))
+        : [];
     } catch {
-      return ['maa-beti-emotional-theme-planter'];
+      return [];
     }
   });
 
@@ -232,13 +238,73 @@ export const AppProvider = ({ children }) => {
   const codFee = 0; // Transparent zero fee promotion
   const cartGrandTotal = Math.max(0, cartSubtotal - (appliedCoupon ? appliedCoupon.discount : 0) + deliveryFee);
 
+  // History synchronization & Back Navigation
+  useEffect(() => {
+    if (!window.history.state) {
+      window.history.replaceState({ page: 'home', category: 'all' }, '');
+    }
+
+    const handlePopState = (e) => {
+      if (e.state && e.state.page) {
+        if (e.state.productId) setSelectedProductId(e.state.productId);
+        if (e.state.category) setActiveCategory(e.state.category);
+        if (e.state.orderId) setActiveOrderId(e.state.orderId);
+        if (e.state.searchQuery !== undefined) setSearchQuery(e.state.searchQuery);
+        setCurrentPage(e.state.page);
+      } else {
+        setCurrentPage('home');
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
   // Navigation handlers
-  const navigateTo = (page, params = {}) => {
+  const navigateTo = (page, params = {}, replace = false) => {
+    const nextProdId = params.productId || selectedProductId;
+    const nextCat = params.category || activeCategory;
+    const nextOrder = params.orderId || activeOrderId;
+    const nextSearch = params.searchQuery !== undefined ? params.searchQuery : searchQuery;
+
     if (params.productId) setSelectedProductId(params.productId);
     if (params.category) setActiveCategory(params.category);
     if (params.orderId) setActiveOrderId(params.orderId);
+    if (params.searchQuery !== undefined) setSearchQuery(params.searchQuery);
+
+    const stateObj = {
+      page,
+      productId: nextProdId,
+      category: nextCat,
+      orderId: nextOrder,
+      searchQuery: nextSearch
+    };
+
+    try {
+      if (replace) {
+        window.history.replaceState(stateObj, '');
+      } else {
+        window.history.pushState(stateObj, '');
+      }
+    } catch {
+      // Fallback if environment restricts history state
+    }
+
     setCurrentPage(page);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const goBack = () => {
+    if (window.history.state && window.history.length > 1) {
+      window.history.back();
+    } else {
+      if (currentPage === 'pdp') {
+        navigateTo('category', { category: activeCategory || 'all' });
+      } else {
+        navigateTo('home');
+      }
+    }
   };
 
   const openShareModal = (product) => {
@@ -281,6 +347,7 @@ export const AppProvider = ({ children }) => {
       value={{
         currentPage,
         navigateTo,
+        goBack,
         selectedProductId,
         setSelectedProductId,
         activeCategory,

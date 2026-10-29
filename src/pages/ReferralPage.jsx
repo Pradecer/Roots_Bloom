@@ -9,11 +9,12 @@ import {
   Users, 
   Coins, 
   ChevronRight,
-  Sparkles
+  Sparkles,
+  ArrowLeft
 } from 'lucide-react';
 
 export const ReferralPage = () => {
-  const { user, navigateTo, lang, t, showToast } = useApp();
+  const { user, navigateTo, goBack, lang, t, showToast } = useApp();
   const [copied, setCopied] = useState(false);
 
   const referralCode = 'PRIYA100';
@@ -34,8 +35,17 @@ export const ReferralPage = () => {
   return (
     <div className="referral-page-container py-4">
       <div className="container max-w-2xl mx-auto">
-        {/* Breadcrumb */}
-        <div className="breadcrumb-bar mb-3">
+        {/* Breadcrumb & Back */}
+        <div className="breadcrumb-bar mb-3 flex items-center gap-1.5">
+          <button 
+            onClick={goBack} 
+            className="pdp-back-btn mr-1 flex items-center gap-1"
+            title={t('back')}
+          >
+            <ArrowLeft size={16} />
+            <span>{t('back')}</span>
+          </button>
+          <span className="text-muted text-xs">/</span>
           <button onClick={() => navigateTo('home')} className="breadcrumb-link">{t('home')}</button>
           <ChevronRight size={14} className="text-muted" />
           <span className="breadcrumb-current">{t('referAndEarn')}</span>

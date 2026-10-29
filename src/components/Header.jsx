@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useApp } from '../context/AppContext';
 import { 
   Search, 
@@ -10,15 +10,18 @@ import {
   Package, 
   Sparkles,
   ChevronDown,
-  X
+  X,
+  ArrowLeft
 } from 'lucide-react';
 import { PRODUCTS, CATEGORIES } from '../data/catalog';
 
 export const Header = () => {
   const { 
     navigateTo, 
+    goBack,
     currentPage, 
     cart, 
+    cartItemsWithDetails,
     wishlist, 
     pincode, 
     setIsPincodeModalOpen,
@@ -32,9 +35,18 @@ export const Header = () => {
   } = useApp();
 
   const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const [isIPhone, setIsIPhone] = useState(false);
 
-  const cartCount = cart.reduce((total, item) => total + item.qty, 0);
-  const wishlistCount = wishlist.length;
+  useEffect(() => {
+    // Detect iPhone or iOS devices (where system hardware back button is absent)
+    const ua = navigator.userAgent || '';
+    const isIOSDevice = /iPhone|iPod|iPad/i.test(ua) || 
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    setIsIPhone(isIOSDevice);
+  }, []);
+
+  const cartCount = cartItemsWithDetails.reduce((total, item) => total + item.qty, 0);
+  const wishlistCount = wishlist.filter((id) => PRODUCTS.some((p) => p.id === id)).length;
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
@@ -96,10 +108,23 @@ export const Header = () => {
         <div className="container nav-content">
           {/* Top Brand & Location Row (On Mobile this splits from search bar, on desktop stays inline) */}
           <div className="nav-brand-location-wrap">
-            {/* Brand Logo */}
-            <div className="brand-wrap" onClick={() => navigateTo('home')}>
-              <span className="brand-logo-text">Roots_Bloom</span>
-              <span className="brand-subtext">{lang === 'hi' ? 'हस्तनिर्मित जीवित गार्डन्स' : 'Handcrafted Miniature Gardens'}</span>
+            <div className="nav-brand-left-group flex items-center gap-2">
+              {isIPhone && currentPage !== 'home' && (
+                <button 
+                  className="header-back-btn ios-back-btn" 
+                  onClick={goBack}
+                  title={t('back')}
+                  aria-label="Go Back"
+                >
+                  <ArrowLeft size={18} />
+                  <span className="header-back-text">{t('back')}</span>
+                </button>
+              )}
+              {/* Brand Logo */}
+              <div className="brand-wrap" onClick={() => navigateTo('home')}>
+                <span className="brand-logo-text">Roots_Bloom</span>
+                <span className="brand-subtext">{lang === 'hi' ? 'हस्तनिर्मित जीवित गार्डन्स' : 'Handcrafted Miniature Gardens'}</span>
+              </div>
             </div>
 
             {/* Delivery Pincode Selector Chip */}

@@ -2,10 +2,10 @@ import React from 'react';
 import { useApp } from '../context/AppContext';
 import { PRODUCTS } from '../data/catalog';
 import { ProductCard } from '../components/ProductCard';
-import { Heart, ArrowRight, ShoppingBag } from 'lucide-react';
+import { Heart, ArrowRight, ShoppingBag, ArrowLeft } from 'lucide-react';
 
 export const WishlistPage = () => {
-  const { wishlist, navigateTo, lang, t } = useApp();
+  const { wishlist, navigateTo, goBack, lang, t } = useApp();
 
   const wishlistedProducts = PRODUCTS.filter((p) => wishlist.includes(p.id));
 
@@ -13,6 +13,16 @@ export const WishlistPage = () => {
     return (
       <div className="wishlist-page-container py-8">
         <div className="container text-center py-6">
+          <div className="flex justify-start mb-4">
+            <button 
+              onClick={goBack} 
+              className="pdp-back-btn flex items-center gap-1"
+              title={t('back')}
+            >
+              <ArrowLeft size={16} />
+              <span>{t('back')}</span>
+            </button>
+          </div>
           <div className="empty-cart-icon-box mx-auto mb-3">
             <Heart size={48} className="text-muted" />
           </div>
@@ -34,6 +44,17 @@ export const WishlistPage = () => {
   return (
     <div className="wishlist-page-container py-4">
       <div className="container">
+        <div className="breadcrumb-bar mb-3">
+          <button 
+            onClick={goBack} 
+            className="pdp-back-btn flex items-center gap-1"
+            title={t('back')}
+          >
+            <ArrowLeft size={16} />
+            <span>{t('back')}</span>
+          </button>
+        </div>
+
         <div className="flex items-center justify-between mb-4">
           <h1 className="page-heading flex items-center gap-2">
             <Heart size={22} className="text-crimson" fill="var(--color-accent-crimson)" />
