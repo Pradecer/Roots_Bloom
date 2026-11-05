@@ -1,5 +1,5 @@
-// Real Catalog for Roots_Bloom - Generated Directly From WhatsApp Business Catalog
-// Total Products: 109 Items with Authentic Images, Hindi Translations & Real Pricing
+// Real Catalog for Roots_Bloom - High Resolution Artisan Selection
+// Total Products: 72 Premium High-Resolution Items
 
 export const PRODUCTS = [
   {
@@ -63,11 +63,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -175,11 +175,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -287,11 +287,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -399,11 +399,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -511,11 +511,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -623,11 +623,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -735,11 +735,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -847,11 +847,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -959,11 +959,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -999,116 +999,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-tree-stump-lovebirds-feeder-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-football",
-    "sku": "RB-CAT-010",
-    "name": "Football Miniature",
-    "name_hi": "फुटबॉल मिनिएचर",
-    "category": "Miniature Toys",
-    "category_hi": "मिनी खिलौने एवं डेकोर",
-    "subcategory": "Sports",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Football Miniature — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "फुटबॉल मिनिएचर — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "football",
-      "sports toy",
-      "mini ball"
-    ],
-    "description": "Exquisite handcrafted Football Miniature designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक फुटबॉल मिनिएचर, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 25,
-      "offer_price": 20,
-      "discount_percent": 20
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/football.png",
-      "gallery": [
-        "/products/football.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-football-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Football Miniature is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-football-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -1179,11 +1069,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -1290,11 +1180,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -1400,11 +1290,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -1510,11 +1400,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -1620,11 +1510,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -1729,11 +1619,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -1839,11 +1729,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -1879,116 +1769,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-study-table-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-flower-brooch",
-    "sku": "RB-CAT-018",
-    "name": "Flower Brooch (Per Piece)",
-    "name_hi": "फ्लावर ब्रोच (प्रति नग)",
-    "category": "Miniature Toys",
-    "category_hi": "मिनी खिलौने एवं डेकोर",
-    "subcategory": "Floral Decor",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Flower Brooch (Per Piece) — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "फ्लावर ब्रोच (प्रति नग) — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "flower",
-      "brooch",
-      "floral charm"
-    ],
-    "description": "Exquisite handcrafted Flower Brooch (Per Piece) designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक फ्लावर ब्रोच (प्रति नग), जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 30,
-      "offer_price": 25,
-      "discount_percent": 17
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-flower-brooch.png",
-      "gallery": [
-        "/products/miniature-flower-brooch.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-flower-brooch-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Flower Brooch (Per Piece) is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-flower-brooch-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -2059,11 +1839,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -2169,11 +1949,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -2279,11 +2059,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -2389,11 +2169,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -2429,116 +2209,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-cute-dog-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-vintage-street-lamp",
-    "sku": "RB-CAT-023",
-    "name": "Vintage Street Lamp",
-    "name_hi": "स्ट्रीट लैंप (प्रति नग)",
-    "category": "Furniture & Decor",
-    "category_hi": "फर्नीचर एवं डेकोर",
-    "subcategory": "Lighting",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Vintage Street Lamp — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "स्ट्रीट लैंप (प्रति नग) — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "lamp",
-      "street light",
-      "post lamp"
-    ],
-    "description": "Exquisite handcrafted Vintage Street Lamp designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक स्ट्रीट लैंप (प्रति नग), जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 40,
-      "offer_price": 35,
-      "discount_percent": 12
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-vintage-street-lamp.png",
-      "gallery": [
-        "/products/miniature-vintage-street-lamp.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-vintage-street-lamp-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Vintage Street Lamp is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-vintage-street-lamp-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -2609,11 +2279,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -2719,11 +2389,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -2829,11 +2499,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -2869,116 +2539,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-uncle-aunty-scooter-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-cute-bunnies-group",
-    "sku": "RB-CAT-027",
-    "name": "Cute Playful Bunnies",
-    "name_hi": "क्यूट बनीज (प्रति नग)",
-    "category": "Miniature Toys",
-    "category_hi": "मिनी खिलौने एवं डेकोर",
-    "subcategory": "Animals",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Cute Playful Bunnies — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "क्यूट बनीज (प्रति नग) — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "bunny",
-      "rabbit",
-      "cute animal"
-    ],
-    "description": "Exquisite handcrafted Cute Playful Bunnies designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक क्यूट बनीज (प्रति नग), जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 50,
-      "offer_price": 45,
-      "discount_percent": 10
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-cute-bunnies-group.png",
-      "gallery": [
-        "/products/miniature-cute-bunnies-group.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-cute-bunnies-group-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Cute Playful Bunnies is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-cute-bunnies-group-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -3050,11 +2610,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -3160,11 +2720,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -3270,11 +2830,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -3380,11 +2940,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -3420,226 +2980,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-doll-planter-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-young-couple-scooter",
-    "sku": "RB-CAT-032",
-    "name": "Young Couple on Scooter",
-    "name_hi": "यंग कपल स्कूटर",
-    "category": "Couples & Gifting",
-    "category_hi": "कपल एवं गिफ्टिंग",
-    "subcategory": "Couples",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Young Couple on Scooter — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "यंग कपल स्कूटर — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "scooter couple",
-      "young couple",
-      "bike"
-    ],
-    "description": "Exquisite handcrafted Young Couple on Scooter designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक यंग कपल स्कूटर, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 199,
-      "offer_price": 179,
-      "discount_percent": 10
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-young-couple-scooter.png",
-      "gallery": [
-        "/products/miniature-young-couple-scooter.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-young-couple-scooter-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Young Couple on Scooter is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-young-couple-scooter-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-cute-babies-twins",
-    "sku": "RB-CAT-033",
-    "name": "Cute Babies Twins",
-    "name_hi": "क्यूट बेबीज जोड़ी",
-    "category": "Miniature Toys",
-    "category_hi": "मिनी खिलौने एवं डेकोर",
-    "subcategory": "Kids & Baby",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Cute Babies Twins — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "क्यूट बेबीज जोड़ी — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "babies",
-      "twins",
-      "cute kids"
-    ],
-    "description": "Exquisite handcrafted Cute Babies Twins designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक क्यूट बेबीज जोड़ी, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 300,
-      "offer_price": 250,
-      "discount_percent": 17
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-cute-babies-twins.png",
-      "gallery": [
-        "/products/miniature-cute-babies-twins.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-cute-babies-twins-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Cute Babies Twins is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-cute-babies-twins-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -3710,11 +3050,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -3750,116 +3090,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-bird-stand-branch-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-chinese-wise-man",
-    "sku": "RB-CAT-035",
-    "name": "Chinese Sage Meditation Figurine",
-    "name_hi": "चाइनीज ऋषि मिनिएचर",
-    "category": "Devotional",
-    "category_hi": "भक्ति एवं वास्तु",
-    "subcategory": "Figurines",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Chinese Sage Meditation Figurine — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "चाइनीज ऋषि मिनिएचर — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "sage",
-      "meditation",
-      "chinese master"
-    ],
-    "description": "Exquisite handcrafted Chinese Sage Meditation Figurine designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक चाइनीज ऋषि मिनिएचर, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 125,
-      "offer_price": 100,
-      "discount_percent": 20
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-chinese-wise-man.png",
-      "gallery": [
-        "/products/miniature-chinese-wise-man.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-chinese-wise-man-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Chinese Sage Meditation Figurine is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-chinese-wise-man-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -3930,11 +3160,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -4040,11 +3270,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -4080,116 +3310,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-christmas-santa-couple-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-doctor-nurse-duo",
-    "sku": "RB-CAT-038",
-    "name": "Doctor and Nurse Pair",
-    "name_hi": "डॉक्टर और नर्स जोड़ी",
-    "category": "Couples & Gifting",
-    "category_hi": "कपल एवं गिफ्टिंग",
-    "subcategory": "Occupations",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Doctor and Nurse Pair — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "डॉक्टर और नर्स जोड़ी — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "doctor",
-      "nurse",
-      "medical couple"
-    ],
-    "description": "Exquisite handcrafted Doctor and Nurse Pair designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक डॉक्टर और नर्स जोड़ी, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 199,
-      "offer_price": 179,
-      "discount_percent": 10
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-doctor-nurse-duo.png",
-      "gallery": [
-        "/products/miniature-doctor-nurse-duo.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-doctor-nurse-duo-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Doctor and Nurse Pair is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-doctor-nurse-duo-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -4259,11 +3379,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -4368,11 +3488,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -4478,11 +3598,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -4518,115 +3638,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-bo-bird-house-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-yellow-perched-bird",
-    "sku": "RB-CAT-042",
-    "name": "Perched Yellow Garden Bird",
-    "name_hi": "पीला पक्षी मिनिएचर",
-    "category": "Miniature Toys",
-    "category_hi": "मिनी खिलौने एवं डेकोर",
-    "subcategory": "Birds",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Perched Yellow Garden Bird — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "पीला पक्षी मिनिएचर — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "yellow bird",
-      "perched parrot"
-    ],
-    "description": "Exquisite handcrafted Perched Yellow Garden Bird designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक पीला पक्षी मिनिएचर, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 250,
-      "offer_price": 200,
-      "discount_percent": 20
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-yellow-perched-bird.png",
-      "gallery": [
-        "/products/miniature-yellow-perched-bird.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-yellow-perched-bird-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Perched Yellow Garden Bird is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-yellow-perched-bird-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -4697,11 +3708,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -4737,115 +3748,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-grey-zen-buddha-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-iron-barrel-tree",
-    "sku": "RB-CAT-044",
-    "name": "Iron Barrel on Branch",
-    "name_hi": "आयरन बैरल स्टैंड",
-    "category": "Furniture & Decor",
-    "category_hi": "फर्नीचर एवं डेकोर",
-    "subcategory": "Garden Decor",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Iron Barrel on Branch — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "आयरन बैरल स्टैंड — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "iron barrel",
-      "garden accessory"
-    ],
-    "description": "Exquisite handcrafted Iron Barrel on Branch designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक आयरन बैरल स्टैंड, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 125,
-      "offer_price": 100,
-      "discount_percent": 20
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-iron-barrel-tree.png",
-      "gallery": [
-        "/products/miniature-iron-barrel-tree.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-iron-barrel-tree-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Iron Barrel on Branch is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-iron-barrel-tree-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -4916,11 +3818,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -5026,11 +3928,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -5136,11 +4038,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -5246,11 +4148,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -5356,11 +4258,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -5466,11 +4368,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -5576,11 +4478,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -5686,11 +4588,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -5795,11 +4697,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -5835,116 +4737,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-standing-bunnies-pack-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-ocean-mermaid",
-    "sku": "RB-CAT-054",
-    "name": "Ocean Mermaid on Rock",
-    "name_hi": "जलपरी मिनिएचर",
-    "category": "Miniature Toys",
-    "category_hi": "मिनी खिलौने एवं डेकोर",
-    "subcategory": "Fantasy",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Ocean Mermaid on Rock — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "जलपरी मिनिएचर — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "mermaid",
-      "ocean",
-      "fantasy"
-    ],
-    "description": "Exquisite handcrafted Ocean Mermaid on Rock designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक जलपरी मिनिएचर, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 100,
-      "offer_price": 80,
-      "discount_percent": 20
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-ocean-mermaid.png",
-      "gallery": [
-        "/products/miniature-ocean-mermaid.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-ocean-mermaid-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Ocean Mermaid on Rock is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-ocean-mermaid-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -6014,11 +4806,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -6054,115 +4846,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-kissing-sweet-couple-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-black-coat-couple",
-    "sku": "RB-CAT-056",
-    "name": "Formal Couple on Bench",
-    "name_hi": "फॉर्मल कपल मिनिएचर",
-    "category": "Couples & Gifting",
-    "category_hi": "कपल एवं गिफ्टिंग",
-    "subcategory": "Couples",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Formal Couple on Bench — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "फॉर्मल कपल मिनिएचर — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "black coat couple",
-      "bench couple"
-    ],
-    "description": "Exquisite handcrafted Formal Couple on Bench designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक फॉर्मल कपल मिनिएचर, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 149,
-      "offer_price": 119,
-      "discount_percent": 20
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-black-coat-couple.png",
-      "gallery": [
-        "/products/miniature-black-coat-couple.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-black-coat-couple-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Formal Couple on Bench is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-black-coat-couple-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -6233,11 +4916,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -6273,226 +4956,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-farm-horse-cart-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-wooden-sign-boards",
-    "sku": "RB-CAT-058",
-    "name": "Rustic Wooden Signpost",
-    "name_hi": "साइन बोर्ड मिनिएचर",
-    "category": "Furniture & Decor",
-    "category_hi": "फर्नीचर एवं डेकोर",
-    "subcategory": "Garden Decor",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Rustic Wooden Signpost — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "साइन बोर्ड मिनिएचर — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "sign board",
-      "signpost",
-      "wooden arrow"
-    ],
-    "description": "Exquisite handcrafted Rustic Wooden Signpost designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक साइन बोर्ड मिनिएचर, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 30,
-      "offer_price": 25,
-      "discount_percent": 17
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-wooden-sign-boards.png",
-      "gallery": [
-        "/products/miniature-wooden-sign-boards.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-wooden-sign-boards-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Rustic Wooden Signpost is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-wooden-sign-boards-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-cobblestone-bridge",
-    "sku": "RB-CAT-059",
-    "name": "Cobblestone Arch Bridge",
-    "name_hi": "पत्थर का मेहराबदार पुल",
-    "category": "Furniture & Decor",
-    "category_hi": "फर्नीचर एवं डेकोर",
-    "subcategory": "Bridges",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Cobblestone Arch Bridge — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "पत्थर का मेहराबदार पुल — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "bridge",
-      "arch bridge",
-      "cobblestone"
-    ],
-    "description": "Exquisite handcrafted Cobblestone Arch Bridge designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक पत्थर का मेहराबदार पुल, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 50,
-      "offer_price": 40,
-      "discount_percent": 20
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-cobblestone-bridge.png",
-      "gallery": [
-        "/products/miniature-cobblestone-bridge.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-cobblestone-bridge-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Cobblestone Arch Bridge is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-cobblestone-bridge-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -6562,11 +5025,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -6672,11 +5135,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -6712,335 +5175,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-rustic-wooden-bench-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-stone-arch-bridge",
-    "sku": "RB-CAT-062",
-    "name": "Stone Masonry Arch Bridge",
-    "name_hi": "स्टोन ब्रिज",
-    "category": "Furniture & Decor",
-    "category_hi": "फर्नीचर एवं डेकोर",
-    "subcategory": "Bridges",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Stone Masonry Arch Bridge — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "स्टोन ब्रिज — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "stone bridge",
-      "pond bridge"
-    ],
-    "description": "Exquisite handcrafted Stone Masonry Arch Bridge designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक स्टोन ब्रिज, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 50,
-      "offer_price": 40,
-      "discount_percent": 20
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-stone-arch-bridge.png",
-      "gallery": [
-        "/products/miniature-stone-arch-bridge.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-stone-arch-bridge-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Stone Masonry Arch Bridge is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-stone-arch-bridge-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-yellow-safari-giraffe",
-    "sku": "RB-CAT-063",
-    "name": "Yellow Safari Giraffe",
-    "name_hi": "सफारी जिराफ (प्रति नग)",
-    "category": "Miniature Toys",
-    "category_hi": "मिनी खिलौने एवं डेकोर",
-    "subcategory": "Animals",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Yellow Safari Giraffe — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "सफारी जिराफ (प्रति नग) — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "giraffe",
-      "safari animal",
-      "yellow animal"
-    ],
-    "description": "Exquisite handcrafted Yellow Safari Giraffe designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक सफारी जिराफ (प्रति नग), जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 30,
-      "offer_price": 25,
-      "discount_percent": 17
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-yellow-safari-giraffe.png",
-      "gallery": [
-        "/products/miniature-yellow-safari-giraffe.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-yellow-safari-giraffe-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Yellow Safari Giraffe is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-yellow-safari-giraffe-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-travelling-boys-girl",
-    "sku": "RB-CAT-064",
-    "name": "Travelling Friends Trio",
-    "name_hi": "ट्रैवलिंग फ्रेंड्स मिनिएचर",
-    "category": "Couples & Gifting",
-    "category_hi": "कपल एवं गिफ्टिंग",
-    "subcategory": "Figures",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Travelling Friends Trio — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "ट्रैवलिंग फ्रेंड्स मिनिएचर — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "friends",
-      "travelling boys",
-      "backpack"
-    ],
-    "description": "Exquisite handcrafted Travelling Friends Trio designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक ट्रैवलिंग फ्रेंड्स मिनिएचर, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 250,
-      "offer_price": 200,
-      "discount_percent": 20
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-travelling-boys-girl.png",
-      "gallery": [
-        "/products/miniature-travelling-boys-girl.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-travelling-boys-girl-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Travelling Friends Trio is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-travelling-boys-girl-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -7111,11 +5245,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -7151,116 +5285,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-vintage-pink-car-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-bookworm-boy-girl",
-    "sku": "RB-CAT-066",
-    "name": "Boy or Girl on Books",
-    "name_hi": "किताबों पर बैठा बच्चा",
-    "category": "Miniature Toys",
-    "category_hi": "मिनी खिलौने एवं डेकोर",
-    "subcategory": "Kids & Baby",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Boy or Girl on Books — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "किताबों पर बैठा बच्चा — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "books",
-      "reading boy",
-      "student"
-    ],
-    "description": "Exquisite handcrafted Boy or Girl on Books designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक किताबों पर बैठा बच्चा, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 125,
-      "offer_price": 100,
-      "discount_percent": 20
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-bookworm-boy-girl.png",
-      "gallery": [
-        "/products/miniature-bookworm-boy-girl.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-bookworm-boy-girl-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Boy or Girl on Books is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-bookworm-boy-girl-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -7331,11 +5355,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -7441,11 +5465,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -7481,224 +5505,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-stone-pagoda-shrine-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-pastel-moon-couple",
-    "sku": "RB-CAT-069",
-    "name": "Pastel Moon Romantic Couple",
-    "name_hi": "पेस्टल मून कपल",
-    "category": "Couples & Gifting",
-    "category_hi": "कपल एवं गिफ्टिंग",
-    "subcategory": "Couples",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Pastel Moon Romantic Couple — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "पेस्टल मून कपल — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "moon couple",
-      "pastel couple"
-    ],
-    "description": "Exquisite handcrafted Pastel Moon Romantic Couple designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक पेस्टल मून कपल, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 150,
-      "offer_price": 100,
-      "discount_percent": 33
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-pastel-moon-couple.png",
-      "gallery": [
-        "/products/miniature-pastel-moon-couple.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-pastel-moon-couple-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Pastel Moon Romantic Couple is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-pastel-moon-couple-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-hoodie-unicorn-couple",
-    "sku": "RB-CAT-070",
-    "name": "Unicorn Hoodie Cosplay Couple",
-    "name_hi": "यूनिकॉर्न हुडी कपल",
-    "category": "Couples & Gifting",
-    "category_hi": "कपल एवं गिफ्टिंग",
-    "subcategory": "Couples",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Unicorn Hoodie Cosplay Couple — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "यूनिकॉर्न हुडी कपल — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "unicorn couple",
-      "hoodie couple"
-    ],
-    "description": "Exquisite handcrafted Unicorn Hoodie Cosplay Couple designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक यूनिकॉर्न हुडी कपल, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 150,
-      "offer_price": 125,
-      "discount_percent": 17
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-hoodie-unicorn-couple.png",
-      "gallery": [
-        "/products/miniature-hoodie-unicorn-couple.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-hoodie-unicorn-couple-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Unicorn Hoodie Cosplay Couple is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-hoodie-unicorn-couple-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -7768,11 +5574,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -7877,11 +5683,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -7917,225 +5723,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-holding-purple-couple-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-classic-piano",
-    "sku": "RB-CAT-073",
-    "name": "Miniature Grand Piano",
-    "name_hi": "क्लासिक पियानो",
-    "category": "Furniture & Decor",
-    "category_hi": "फर्नीचर एवं डेकोर",
-    "subcategory": "Music",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Miniature Grand Piano — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "क्लासिक पियानो — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "piano",
-      "musical instrument",
-      "grand piano"
-    ],
-    "description": "Exquisite handcrafted Miniature Grand Piano designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक क्लासिक पियानो, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 75,
-      "offer_price": 70,
-      "discount_percent": 7
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-classic-piano.png",
-      "gallery": [
-        "/products/miniature-classic-piano.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-classic-piano-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Miniature Grand Piano is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-classic-piano-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-traditional-chinese-couple",
-    "sku": "RB-CAT-074",
-    "name": "Traditional Chinese Folk Couple",
-    "name_hi": "ट्रेडिशनल चाइनीज कपल",
-    "category": "Couples & Gifting",
-    "category_hi": "कपल एवं गिफ्टिंग",
-    "subcategory": "Couples",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Traditional Chinese Folk Couple — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "ट्रेडिशनल चाइनीज कपल — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "chinese folk",
-      "traditional dress"
-    ],
-    "description": "Exquisite handcrafted Traditional Chinese Folk Couple designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक ट्रेडिशनल चाइनीज कपल, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 150,
-      "offer_price": 125,
-      "discount_percent": 17
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-traditional-chinese-couple.png",
-      "gallery": [
-        "/products/miniature-traditional-chinese-couple.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-traditional-chinese-couple-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Traditional Chinese Folk Couple is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-traditional-chinese-couple-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -8205,11 +5792,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -8315,11 +5902,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -8355,555 +5942,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-grey-safari-elephant-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-cormorant-chinese-fisherman",
-    "sku": "RB-CAT-077",
-    "name": "Chinese Cormorant Fisherman",
-    "name_hi": "मछुआरा मिनिएचर",
-    "category": "Miniature Toys",
-    "category_hi": "मिनी खिलौने एवं डेकोर",
-    "subcategory": "Figures",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Chinese Cormorant Fisherman — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "मछुआरा मिनिएचर — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "fisherman",
-      "cormorant",
-      "boatman"
-    ],
-    "description": "Exquisite handcrafted Chinese Cormorant Fisherman designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक मछुआरा मिनिएचर, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 350,
-      "offer_price": 300,
-      "discount_percent": 14
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-cormorant-chinese-fisherman.png",
-      "gallery": [
-        "/products/miniature-cormorant-chinese-fisherman.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-cormorant-chinese-fisherman-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Chinese Cormorant Fisherman is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-cormorant-chinese-fisherman-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-yellow-school-bus",
-    "sku": "RB-CAT-078",
-    "name": "Retro Yellow School Bus",
-    "name_hi": "येलो स्कूल बस",
-    "category": "Furniture & Decor",
-    "category_hi": "फर्नीचर एवं डेकोर",
-    "subcategory": "Vehicles",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Retro Yellow School Bus — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "येलो स्कूल बस — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "school bus",
-      "yellow bus",
-      "van"
-    ],
-    "description": "Exquisite handcrafted Retro Yellow School Bus designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक येलो स्कूल बस, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 125,
-      "offer_price": 100,
-      "discount_percent": 20
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-yellow-school-bus.png",
-      "gallery": [
-        "/products/miniature-yellow-school-bus.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-yellow-school-bus-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Retro Yellow School Bus is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-yellow-school-bus-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-black-street-lamps-trio",
-    "sku": "RB-CAT-079",
-    "name": "Three-Tier Street Light (Per Lamp)",
-    "name_hi": "स्ट्रीट लाइट (प्रति लैंप)",
-    "category": "Furniture & Decor",
-    "category_hi": "फर्नीचर एवं डेकोर",
-    "subcategory": "Lighting",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Three-Tier Street Light (Per Lamp) — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "स्ट्रीट लाइट (प्रति लैंप) — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "street light",
-      "triple lamp",
-      "lantern"
-    ],
-    "description": "Exquisite handcrafted Three-Tier Street Light (Per Lamp) designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक स्ट्रीट लाइट (प्रति लैंप), जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 149,
-      "offer_price": 119,
-      "discount_percent": 20
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-black-street-lamps-trio.png",
-      "gallery": [
-        "/products/miniature-black-street-lamps-trio.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-black-street-lamps-trio-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Three-Tier Street Light (Per Lamp) is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-black-street-lamps-trio-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-directional-signposts",
-    "sku": "RB-CAT-080",
-    "name": "Direction Signpost Arrows",
-    "name_hi": "दिशा सूचक साइन बोर्ड",
-    "category": "Furniture & Decor",
-    "category_hi": "फर्नीचर एवं डेकोर",
-    "subcategory": "Garden Decor",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Direction Signpost Arrows — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "दिशा सूचक साइन बोर्ड — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "direction sign",
-      "arrow sign"
-    ],
-    "description": "Exquisite handcrafted Direction Signpost Arrows designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक दिशा सूचक साइन बोर्ड, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 22,
-      "offer_price": 20,
-      "discount_percent": 9
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-directional-signposts.png",
-      "gallery": [
-        "/products/miniature-directional-signposts.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-directional-signposts-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Direction Signpost Arrows is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-directional-signposts-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-duo-forest-owls",
-    "sku": "RB-CAT-081",
-    "name": "Duo Forest Owls on Perch",
-    "name_hi": "उल्लू जोड़ी मिनिएचर",
-    "category": "Miniature Toys",
-    "category_hi": "मिनी खिलौने एवं डेकोर",
-    "subcategory": "Birds",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Duo Forest Owls on Perch — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "उल्लू जोड़ी मिनिएचर — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "owl",
-      "owls pair",
-      "forest bird"
-    ],
-    "description": "Exquisite handcrafted Duo Forest Owls on Perch designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक उल्लू जोड़ी मिनिएचर, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 50,
-      "offer_price": 45,
-      "discount_percent": 10
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-duo-forest-owls.png",
-      "gallery": [
-        "/products/miniature-duo-forest-owls.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-duo-forest-owls-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Duo Forest Owls on Perch is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-duo-forest-owls-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -8973,11 +6011,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -9083,11 +6121,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -9192,11 +6230,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -9232,116 +6270,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-beanie-purple-couple-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-white-cat-family-single",
-    "sku": "RB-CAT-085",
-    "name": "White Kitten / Cat (Each)",
-    "name_hi": "कैट मिनिएचर (प्रति नग)",
-    "category": "Miniature Toys",
-    "category_hi": "मिनी खिलौने एवं डेकोर",
-    "subcategory": "Animals",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "White Kitten / Cat (Each) — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "कैट मिनिएचर (प्रति नग) — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "cat",
-      "white cat",
-      "kitten"
-    ],
-    "description": "Exquisite handcrafted White Kitten / Cat (Each) designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक कैट मिनिएचर (प्रति नग), जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 40,
-      "offer_price": 35,
-      "discount_percent": 12
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-white-cat-family-single.png",
-      "gallery": [
-        "/products/miniature-white-cat-family-single.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-white-cat-family-single-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on White Kitten / Cat (Each) is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-white-cat-family-single-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -9411,11 +6339,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -9521,11 +6449,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -9631,11 +6559,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -9671,335 +6599,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-floral-table-chairs-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-wooden-resin-park-bench",
-    "sku": "RB-CAT-089",
-    "name": "Wooden Resin Slatted Park Bench",
-    "name_hi": "वुडन रेजिन पार्क बेंच",
-    "category": "Furniture & Decor",
-    "category_hi": "फर्नीचर एवं डेकोर",
-    "subcategory": "Furniture",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Wooden Resin Slatted Park Bench — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "वुडन रेजिन पार्क बेंच — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "park bench",
-      "slatted bench"
-    ],
-    "description": "Exquisite handcrafted Wooden Resin Slatted Park Bench designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक वुडन रेजिन पार्क बेंच, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 120,
-      "offer_price": 100,
-      "discount_percent": 17
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-wooden-resin-park-bench.png",
-      "gallery": [
-        "/products/miniature-wooden-resin-park-bench.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-wooden-resin-park-bench-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Wooden Resin Slatted Park Bench is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-wooden-resin-park-bench-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-mini-cactus-garden-bowl",
-    "sku": "RB-CAT-090",
-    "name": "Mini Cactus Garden Bowl Arrangement",
-    "name_hi": "कैक्टस गार्डन अरेंजमेंट",
-    "category": "Theme Planters",
-    "category_hi": "थीम प्लांटर्स",
-    "subcategory": "Plants & Pots",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Mini Cactus Garden Bowl Arrangement — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "कैक्टस गार्डन अरेंजमेंट — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "cactus garden",
-      "mini cactus",
-      "succulent bowl"
-    ],
-    "description": "Exquisite handcrafted Mini Cactus Garden Bowl Arrangement designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक कैक्टस गार्डन अरेंजमेंट, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 200,
-      "offer_price": 150,
-      "discount_percent": 25
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-mini-cactus-garden-bowl.png",
-      "gallery": [
-        "/products/miniature-mini-cactus-garden-bowl.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-mini-cactus-garden-bowl-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Mini Cactus Garden Bowl Arrangement is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-mini-cactus-garden-bowl-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-boat-fishermen-dock",
-    "sku": "RB-CAT-091",
-    "name": "Fishermen on Boat with Dock",
-    "name_hi": "नाव में मछुआरा मिनिएचर",
-    "category": "Miniature Toys",
-    "category_hi": "मिनी खिलौने एवं डेकोर",
-    "subcategory": "Figures",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Fishermen on Boat with Dock — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "नाव में मछुआरा मिनिएचर — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "boat fishermen",
-      "dock",
-      "river scene"
-    ],
-    "description": "Exquisite handcrafted Fishermen on Boat with Dock designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक नाव में मछुआरा मिनिएचर, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 600,
-      "offer_price": 500,
-      "discount_percent": 17
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-boat-fishermen-dock.png",
-      "gallery": [
-        "/products/miniature-boat-fishermen-dock.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-boat-fishermen-dock-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Fishermen on Boat with Dock is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-boat-fishermen-dock-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -10070,11 +6669,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -10110,116 +6709,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-tiny-white-bunnies-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-botanical-leaves-set",
-    "sku": "RB-CAT-093",
-    "name": "Botanical Leaves & Pinecone Set",
-    "name_hi": "पत्तियां और बोटैनिकल सेट",
-    "category": "Furniture & Decor",
-    "category_hi": "फर्नीचर एवं डेकोर",
-    "subcategory": "Nature",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Botanical Leaves & Pinecone Set — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "पत्तियां और बोटैनिकल सेट — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "leaves",
-      "pinecone",
-      "botanical"
-    ],
-    "description": "Exquisite handcrafted Botanical Leaves & Pinecone Set designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक पत्तियां और बोटैनिकल सेट, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 250,
-      "offer_price": 200,
-      "discount_percent": 20
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-botanical-leaves-set.png",
-      "gallery": [
-        "/products/miniature-botanical-leaves-set.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-botanical-leaves-set-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Botanical Leaves & Pinecone Set is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-botanical-leaves-set-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -10290,11 +6779,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -10330,225 +6819,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-raincoat-umbrella-couple-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-winter-jacket-couple-pair",
-    "sku": "RB-CAT-095",
-    "name": "Winter Jacket Cozy Couple Pair",
-    "name_hi": "विंटर जैकेट कपल जोड़ी",
-    "category": "Couples & Gifting",
-    "category_hi": "कपल एवं गिफ्टिंग",
-    "subcategory": "Couples",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Winter Jacket Cozy Couple Pair — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "विंटर जैकेट कपल जोड़ी — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "winter jacket couple",
-      "cozy couple"
-    ],
-    "description": "Exquisite handcrafted Winter Jacket Cozy Couple Pair designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक विंटर जैकेट कपल जोड़ी, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 225,
-      "offer_price": 175,
-      "discount_percent": 22
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-winter-jacket-couple-pair.png",
-      "gallery": [
-        "/products/miniature-winter-jacket-couple-pair.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-winter-jacket-couple-pair-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Winter Jacket Cozy Couple Pair is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-winter-jacket-couple-pair-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-mini-water-can",
-    "sku": "RB-CAT-096",
-    "name": "Mini Garden Watering Can (Each)",
-    "name_hi": "वाटर कैन मिनिएचर (प्रति नग)",
-    "category": "Furniture & Decor",
-    "category_hi": "फर्नीचर एवं डेकोर",
-    "subcategory": "Garden Decor",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Mini Garden Watering Can (Each) — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "वाटर कैन मिनिएचर (प्रति नग) — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "watering can",
-      "water pot",
-      "gardening can"
-    ],
-    "description": "Exquisite handcrafted Mini Garden Watering Can (Each) designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक वाटर कैन मिनिएचर (प्रति नग), जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 30,
-      "offer_price": 25,
-      "discount_percent": 17
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-mini-water-can.png",
-      "gallery": [
-        "/products/miniature-mini-water-can.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-mini-water-can-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Mini Garden Watering Can (Each) is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-mini-water-can-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -10618,11 +6888,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -10728,11 +6998,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -10768,116 +7038,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-spotted-ladybird-pack-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-blue-rowboats",
-    "sku": "RB-CAT-099",
-    "name": "Blue River Rowboat with Oars",
-    "name_hi": "नीली नाव (प्रति नग)",
-    "category": "Furniture & Decor",
-    "category_hi": "फर्नीचर एवं डेकोर",
-    "subcategory": "Water & Boats",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Blue River Rowboat with Oars — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "नीली नाव (प्रति नग) — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "rowboat",
-      "blue boat",
-      "oars"
-    ],
-    "description": "Exquisite handcrafted Blue River Rowboat with Oars designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक नीली नाव (प्रति नग), जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 80,
-      "offer_price": 75,
-      "discount_percent": 6
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-blue-rowboats.png",
-      "gallery": [
-        "/products/miniature-blue-rowboats.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-blue-rowboats-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Blue River Rowboat with Oars is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-blue-rowboats-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -10948,11 +7108,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -11058,11 +7218,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -11168,11 +7328,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -11278,11 +7438,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -11388,11 +7548,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -11428,116 +7588,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-meditating-blue-buddha-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-fairy-pastel-cottage",
-    "sku": "RB-CAT-105",
-    "name": "Fairy Pastel Cottage House (Each)",
-    "name_hi": "फेयरी कॉटेज हाउस (प्रति नग)",
-    "category": "Furniture & Decor",
-    "category_hi": "फर्नीचर एवं डेकोर",
-    "subcategory": "Buildings",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Fairy Pastel Cottage House (Each) — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "फेयरी कॉटेज हाउस (प्रति नग) — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "cottage",
-      "fairy house",
-      "pastel home"
-    ],
-    "description": "Exquisite handcrafted Fairy Pastel Cottage House (Each) designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक फेयरी कॉटेज हाउस (प्रति नग), जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 125,
-      "offer_price": 100,
-      "discount_percent": 20
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-fairy-pastel-cottage.png",
-      "gallery": [
-        "/products/miniature-fairy-pastel-cottage.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-fairy-pastel-cottage-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Fairy Pastel Cottage House (Each) is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-fairy-pastel-cottage-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -11607,11 +7657,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -11717,11 +7767,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -11757,116 +7807,6 @@ export const PRODUCTS = [
       },
       {
         "id": "rev-miniature-mickey-minnie-cute-couple-2",
-        "user_name": "Amit K.",
-        "rating": 5,
-        "date": "15 Oct 2026",
-        "city": "Bengaluru",
-        "verified": true,
-        "title": "True to photos and great quality",
-        "text": "Very satisfied with the material and durability. Looks amazing in person.",
-        "photo": null
-      }
-    ]
-  },
-  {
-    "id": "miniature-flock-colorful-birds",
-    "sku": "RB-CAT-108",
-    "name": "Flock of Mini Colorful Birds",
-    "name_hi": "रंगीन पक्षियों का झुंड",
-    "category": "Miniature Toys",
-    "category_hi": "मिनी खिलौने एवं डेकोर",
-    "subcategory": "Birds",
-    "target_audience": "Gifting, Home Decor, Nature Lovers",
-    "seo_headline": "Flock of Mini Colorful Birds — Handcrafted Miniature Decor & Planters",
-    "seo_headline_hi": "रंगीन पक्षियों का झुंड — हस्तनिर्मित घर एवं गार्डन सजावट",
-    "search_aliases": [
-      "birds flock",
-      "mini birds",
-      "colorful birds"
-    ],
-    "description": "Exquisite handcrafted Flock of Mini Colorful Birds designed for plant trays, succulent terrariums, and desktop home decor. Made from durable, weather-resistant composite.",
-    "description_hi": "कलात्मक रंगीन पक्षियों का झुंड, जो प्लांट ट्रे, सकुलेंट टेरारियम और डेस्क सजावट के लिए एकदम सही है। टिकाऊ वेदरप्रूफ सामग्री से निर्मित।",
-    "key_features": {
-      "Material": "High-Density Polyresin & Ceramic",
-      "Dimensions": "Detailed in Product Guide",
-      "Finish": "Weatherproof UV Resistant Coating",
-      "Durability": "Suitable for indoor & sheltered outdoor use",
-      "Care Level": "Low Maintenance"
-    },
-    "key_features_hi": {
-      "सामग्री": "हाई-डेंसिटी पॉलीरेजिन और सिरेमिक",
-      "आकार": "उत्पाद विवरण में उल्लिखित",
-      "फिनिश": "वेदरप्रूफ यूवी रेसिस्टेंट कोटिंग",
-      "टिकाऊपन": "घर और बालकनी सजावट के लिए उपयुक्त",
-      "देखभाल": "अत्यंत आसान देख-रेख"
-    },
-    "pricing": {
-      "currency": "INR",
-      "base_price": 30,
-      "offer_price": 25,
-      "discount_percent": 17
-    },
-    "visual_assets": {
-      "badge": "Top Pick",
-      "badge_hi": "पसंदीदा",
-      "photo_angles": [
-        "Studio portrait view",
-        "Close-up detail shot",
-        "Arrangement view"
-      ],
-      "primary_image": "/products/miniature-flock-colorful-birds.png",
-      "gallery": [
-        "/products/miniature-flock-colorful-birds.png"
-      ]
-    },
-    "inventory": {
-      "stock_qty": 45,
-      "status": "in_stock"
-    },
-    "rating": {
-      "average": 4.8,
-      "count": 64,
-      "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
-        "2": 1,
-        "1": 0
-      }
-    },
-    "care_guide": {
-      "sunlight": "Indirect sunlight or shaded balcony",
-      "watering": "Wipe with damp cloth or gentle rinse",
-      "soil": "Garden soil / potting grit compatible",
-      "temperature": "15°C to 40°C"
-    },
-    "care_level": "easy",
-    "is_live_plant": false,
-    "cross_sell_ids": [
-      "miniature-vintage-street-lamp",
-      "miniature-red-mushroom"
-    ],
-    "occasion_tags": [
-      "Home Decor",
-      "Gift",
-      "Birthday",
-      "Anniversary",
-      "Garden"
-    ],
-    "reviews": [
-      {
-        "id": "rev-miniature-flock-colorful-birds-1",
-        "user_name": "Ritu Verma",
-        "rating": 5,
-        "date": "22 Oct 2026",
-        "city": "Delhi NCR",
-        "verified": true,
-        "title": "Stunning handcrafted finish!",
-        "text": "Received safely with great packaging. The detailing on Flock of Mini Colorful Birds is exquisite and authentic.",
-        "photo": null
-      },
-      {
-        "id": "rev-miniature-flock-colorful-birds-2",
         "user_name": "Amit K.",
         "rating": 5,
         "date": "15 Oct 2026",
@@ -11937,11 +7877,11 @@ export const PRODUCTS = [
       "average": 4.8,
       "count": 64,
       "distribution": {
-        "5": 48,
-        "4": 12,
-        "3": 3,
+        "1": 0,
         "2": 1,
-        "1": 0
+        "3": 3,
+        "4": 12,
+        "5": 48
       }
     },
     "care_guide": {
@@ -11991,100 +7931,169 @@ export const PRODUCTS = [
 ];
 
 export const CATEGORIES = [
-  { id: "all", name: "All Products", name_hi: "सभी उत्पाद" },
-  { id: "tray-gardens", name: "Tray Gardens", name_hi: "ट्रे गार्डन्स", categoryKey: "Tray Gardens" },
-  { id: "theme-planters", name: "Pots & Planters", name_hi: "थीम प्लांटर्स", categoryKey: "Theme Planters" },
-  { id: "bird-feeders", name: "Bird Feeders", name_hi: "बर्ड फीडर्स", categoryKey: "Bird Feeders" },
-  { id: "couples-gifting", name: "Couples & Gifting", name_hi: "कपल एवं गिफ्टिंग", categoryKey: "Couples & Gifting" },
-  { id: "devotional", name: "Devotional & Vastu", name_hi: "भक्ति एवं वास्तु", categoryKey: "Devotional" },
-  { id: "furniture-decor", name: "Furniture & Decor", name_hi: "फर्नीचर एवं डेकोर", categoryKey: "Furniture & Decor" },
-  { id: "miniature-toys", name: "Miniature Toys", name_hi: "मिनी खिलौने", categoryKey: "Miniature Toys" }
+  {
+    "id": "all",
+    "name": "All Products",
+    "name_hi": "सभी उत्पाद",
+    "count": 0
+  },
+  {
+    "id": "tray-gardens",
+    "name": "Tray Gardens",
+    "name_hi": "ट्रे गार्डन्स",
+    "categoryKey": "Tray Gardens",
+    "count": 3
+  },
+  {
+    "id": "theme-planters",
+    "name": "Pots & Planters",
+    "name_hi": "थीम प्लांटर्स",
+    "categoryKey": "Theme Planters",
+    "count": 0
+  },
+  {
+    "id": "bird-feeders",
+    "name": "Bird Feeders",
+    "name_hi": "बर्ड फीडर्स",
+    "categoryKey": "Bird Feeders",
+    "count": 3
+  },
+  {
+    "id": "couples-gifting",
+    "name": "Couples & Gifting",
+    "name_hi": "कपल एवं गिफ्टिंग",
+    "categoryKey": "Couples & Gifting",
+    "count": 23
+  },
+  {
+    "id": "devotional",
+    "name": "Devotional & Vastu",
+    "name_hi": "भक्ति एवं वास्तु",
+    "categoryKey": "Devotional",
+    "count": 0
+  },
+  {
+    "id": "furniture-decor",
+    "name": "Furniture & Decor",
+    "name_hi": "फर्नीचर एवं डेकोर",
+    "categoryKey": "Furniture & Decor",
+    "count": 15
+  },
+  {
+    "id": "miniature-toys",
+    "name": "Miniature Toys",
+    "name_hi": "मिनी खिलौने",
+    "categoryKey": "Miniature Toys",
+    "count": 17
+  }
 ];
 
 export const EMOTIONAL_SHELVES = [
   {
-    id: "tray-gardens",
-    title: "Handcrafted Live Miniature Tray Gardens",
-    title_hi: "हस्तनिर्मित जीवित मिनिएचर ट्रे गार्डन्स",
-    subtitle: "Living bonsai, live succulents & sacred stones in ceramic trays",
-    subtitle_hi: "सिरेमिक ट्रे में असली पौधे, पवित्र मूर्तियां और सुकून भरी हरियाली",
-    productIds: ["shiv-tray-garden", "fairy-tale-tray-garden", "buddha-tray-garden"]
+    "id": "tray-gardens",
+    "title": "Handcrafted Live Miniature Tray Gardens",
+    "title_hi": "हस्तनिर्मित जीवित मिनिएचर ट्रे गार्डन्स",
+    "subtitle": "Living bonsai, live succulents & sacred stones in ceramic trays",
+    "subtitle_hi": "सिरेमिक ट्रे में असली पौधे, पवित्र मूर्तियां और सुकून भरी हरियाली",
+    "productIds": [
+      "shiv-tray-garden",
+      "fairy-tale-tray-garden",
+      "buddha-tray-garden"
+    ]
   },
   {
-    id: "bird-feeders",
-    title: "Artisan Bird Feeders & Garden Baths",
-    title_hi: "आर्टिसन बर्ड फीडर्स और गार्डन बाथ",
-    subtitle: "Invite nature & sweet chirping birds to your balconies and yards",
-    subtitle_hi: "अपनी बालकनी और बगीचे में पक्षियों का स्वागत करें",
-    productIds: ["stone-basin-bird-feeder", "multi-tier-garden-stake-feeder", "tree-stump-lovebirds-feeder"]
+    "id": "bird-feeders",
+    "title": "Artisan Bird Feeders & Garden Baths",
+    "title_hi": "आर्टिसन बर्ड फीडर्स और गार्डन बाथ",
+    "subtitle": "Invite nature & sweet chirping birds to your balconies and yards",
+    "subtitle_hi": "अपनी बालकनी और बगीचे में पक्षियों का स्वागत करें",
+    "productIds": [
+      "stone-basin-bird-feeder",
+      "multi-tier-garden-stake-feeder",
+      "tree-stump-lovebirds-feeder"
+    ]
   },
   {
-    id: "pots-and-plants",
-    title: "Living Plants & Artisan Pots",
-    title_hi: "जीवंत पौधे और खूबसूरत गमले",
-    subtitle: "Low maintenance indoor companion plants in premium pots",
-    subtitle_hi: "आसान देख-रेख वाले इनडोर पौधे और प्रीमियम प्लांटर्स",
-    productIds: ["calathea-plant-and-pot", "floral-plant-and-pot", "sweet-home-jade-planter"]
+    "id": "pots-and-plants",
+    "title": "Living Plants & Artisan Pots",
+    "title_hi": "जीवंत पौधे और खूबसूरत गमले",
+    "subtitle": "Low maintenance indoor companion plants in premium pots",
+    "subtitle_hi": "आसान देख-रेख वाले इनडोर पौधे और प्रीमियम प्लांटर्स",
+    "productIds": [
+      "calathea-plant-and-pot",
+      "floral-plant-and-pot",
+      "sweet-home-jade-planter"
+    ]
   },
   {
-    id: "couples-gifting",
-    title: "Romantic Couples & Relationship Figurines",
-    title_hi: "कपल और रोमांटिक मिनिएचर मूर्तियां",
-    subtitle: "Heartwarming handcrafted tokens of love and togetherness",
-    subtitle_hi: "प्यार और अटूट रिश्ते को दर्शाने वाले प्यारे मिनिएचर्स",
-    productIds: ["miniature-love-bird-couple", "miniature-uncle-aunty-scooter", "miniature-crescent-moon-couple", "miniature-white-wedding-couple"]
+    "id": "couples-gifting",
+    "title": "Romantic Couples & Relationship Figurines",
+    "title_hi": "कपल और रोमांटिक मिनिएचर मूर्तियां",
+    "subtitle": "Heartwarming handcrafted tokens of love and togetherness",
+    "subtitle_hi": "प्यार और अटूट रिश्ते को दर्शाने वाले प्यारे मिनिएचर्स",
+    "productIds": [
+      "miniature-love-bird-couple",
+      "miniature-uncle-aunty-scooter",
+      "miniature-crescent-moon-couple",
+      "miniature-white-wedding-couple"
+    ]
   },
   {
-    id: "devotional",
-    title: "Devotional, Buddha & Mandir Greenery",
-    title_hi: "भक्ति, बुद्ध और मंदिर हरियाली",
-    subtitle: "Auspicious blessings and calming aura for home temple & work desks",
-    subtitle_hi: "घर के मंदिर और वर्क डेस्क के लिए शुभ एवं शांत वातावरण",
-    productIds: ["shiv-tray-garden", "buddha-tray-garden", "miniature-pure-white-lotus-buddha", "miniature-red-roof-oriental-temple"]
+    "id": "devotional",
+    "title": "Devotional, Buddha & Mandir Greenery",
+    "title_hi": "भक्ति, बुद्ध और मंदिर हरियाली",
+    "subtitle": "Auspicious blessings and calming aura for home temple & work desks",
+    "subtitle_hi": "घर के मंदिर और वर्क डेस्क के लिए शुभ एवं शांत वातावरण",
+    "productIds": [
+      "shiv-tray-garden",
+      "buddha-tray-garden",
+      "miniature-pure-white-lotus-buddha",
+      "miniature-red-roof-oriental-temple"
+    ]
   }
 ];
 
 export const HERO_SLIDES = [
   {
-    id: 1,
-    title: "Handcrafted Shiv Tray Garden",
-    title_hi: "हस्तनिर्मित शिव ट्रे गार्डन",
-    subtitle: "Live Greenery • Meditating Lord Shiva • Real Glow Street Lamp",
-    subtitle_hi: "असली पौधे • ध्यानस्थ शिव प्रतिमा • खूबसूरत स्ट्रीट लैंप",
-    cta: "Order Now ₹1,499",
-    cta_hi: "अभी ऑर्डर करें ₹1,499",
-    link: "shiv-tray-garden",
-    badge: "Most Loved 2026",
-    badge_hi: "सबसे पसंदीदा 2026",
-    bg: "linear-gradient(135deg, #1E4734 0%, #2F6B4F 100%)",
-    image: "/products/shiv-tray-garden.png"
+    "id": 1,
+    "title": "Handcrafted Shiv Tray Garden",
+    "title_hi": "हस्तनिर्मित शिव ट्रे गार्डन",
+    "subtitle": "Live Greenery • Meditating Lord Shiva • Real Glow Street Lamp",
+    "subtitle_hi": "असली पौधे • ध्यानस्थ शिव प्रतिमा • खूबसूरत स्ट्रीट लैंप",
+    "cta": "Order Now ₹1,499",
+    "cta_hi": "अभी ऑर्डर करें ₹1,499",
+    "link": "shiv-tray-garden",
+    "badge": "Most Loved 2026",
+    "badge_hi": "सबसे पसंदीदा 2026",
+    "bg": "linear-gradient(135deg, #1E4734 0%, #2F6B4F 100%)",
+    "image": "/products/shiv-tray-garden.png"
   },
   {
-    id: 2,
-    title: "Fairy Tale Miniature Tray Garden",
-    title_hi: "फेयरी टेल मिनिएचर ट्रे गार्डन",
-    subtitle: "Enchanted Living Forest • Handcrafted Fairies & Live Succulents",
-    subtitle_hi: "जादुई मिनी जंगल • हस्तनिर्मित फेयरी और असली पौधे",
-    cta: "Explore Now ₹1,000",
-    cta_hi: "अभी देखें ₹1,000",
-    link: "fairy-tale-tray-garden",
-    badge: "Trending Decor",
-    badge_hi: "ट्रेंडिंग डेकोर",
-    bg: "linear-gradient(135deg, #2D3A2F 0%, #3B5D43 100%)",
-    image: "/products/fairy-tale-tray-garden.png"
+    "id": 2,
+    "title": "Fairy Tale Miniature Tray Garden",
+    "title_hi": "फेयरी टेल मिनिएचर ट्रे गार्डन",
+    "subtitle": "Enchanted Living Forest • Handcrafted Fairies & Live Succulents",
+    "subtitle_hi": "जादुई मिनी जंगल • हस्तनिर्मित फेयरी और असली पौधे",
+    "cta": "Explore Now ₹1,000",
+    "cta_hi": "अभी देखें ₹1,000",
+    "link": "fairy-tale-tray-garden",
+    "badge": "Trending Decor",
+    "badge_hi": "ट्रेंडिंग डेकोर",
+    "bg": "linear-gradient(135deg, #2D3A2F 0%, #3B5D43 100%)",
+    "image": "/products/fairy-tale-tray-garden.png"
   },
   {
-    id: 3,
-    title: "Artisan Bird Feeders & Garden Accents",
-    title_hi: "आर्टिसन बर्ड फीडर्स और गार्डन डेकोर",
-    subtitle: "Weatherproof Stone Basins & Multi-Tier Stakes for Balcony & Yard",
-    subtitle_hi: "बालकनी और लॉन के लिए वेदरप्रूफ बर्ड बाथ एवं फीडर",
-    cta: "View Feeders ₹500",
-    cta_hi: "फीडर्स देखें ₹500",
-    link: "stone-basin-bird-feeder",
-    badge: "Garden Favourite",
-    badge_hi: "गार्डन स्पेशल",
-    bg: "linear-gradient(135deg, #382E1E 0%, #5C4B2E 100%)",
-    image: "/products/stone-basin-bird-feeder.png"
+    "id": 3,
+    "title": "Artisan Bird Feeders & Garden Accents",
+    "title_hi": "आर्टिसन बर्ड फीडर्स और गार्डन डेकोर",
+    "subtitle": "Weatherproof Stone Basins & Multi-Tier Stakes for Balcony & Yard",
+    "subtitle_hi": "बालकनी और लॉन के लिए वेदरप्रूफ बर्ड बाथ एवं फीडर",
+    "cta": "View Feeders ₹500",
+    "cta_hi": "फीडर्स देखें ₹500",
+    "link": "stone-basin-bird-feeder",
+    "badge": "Garden Favourite",
+    "badge_hi": "गार्डन स्पेशल",
+    "bg": "linear-gradient(135deg, #382E1E 0%, #5C4B2E 100%)",
+    "image": "/products/stone-basin-bird-feeder.png"
   }
 ];
