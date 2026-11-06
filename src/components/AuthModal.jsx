@@ -142,8 +142,8 @@ export const AuthModal = () => {
           </svg>
         </button>
 
-        {/* Modal Header */}
-        <div className="auth-modal-header">
+        {/* Modal Header without subtitles */}
+        <div className="auth-modal-header" style={{ paddingBottom: '16px' }}>
           <div className="auth-logo-badge">
             <div className="auth-logo-img">RB</div>
             <div>
@@ -151,16 +151,11 @@ export const AuthModal = () => {
               <span className="brand-subtitle">{lang === 'hi' ? 'हस्तनिर्मित मिनिएचर' : 'BOTANICAL LIVING ART'}</span>
             </div>
           </div>
-          <h3 id="login-modal-title">
+          <h3 id="login-modal-title" style={{ marginBottom: 0 }}>
             {activeTab === 'login' 
               ? (lang === 'hi' ? 'वापसी पर स्वागत है' : 'Welcome Back') 
               : (lang === 'hi' ? 'नया खाता बनाएं' : 'Create Account')}
           </h3>
-          <p>
-            {activeTab === 'login'
-              ? (lang === 'hi' ? 'अपने ऑर्डर्स, विशलिस्ट और रिवार्ड्स देखने के लिए साइन इन करें' : 'Sign in to manage your plant orders, wishlist & rewards')
-              : (lang === 'hi' ? 'साइनअप करें और अपने पहले ऑर्डर पर ₹200 का बोनस पाएं' : 'Sign up to unlock ₹200 welcome credits & tracking')}
-          </p>
         </div>
 
         {/* Auth Tabs (Login / Register) */}
@@ -266,10 +261,6 @@ export const AuthModal = () => {
                   ? (lang === 'hi' ? 'साइन इन हो रहा है...' : 'Signing in...') 
                   : (lang === 'hi' ? 'साइन इन करें' : 'Sign In')}
               </button>
-
-              <div className="auth-quick-demo">
-                💡 Demo Login: <strong>9876543210</strong> | Password: <strong>demo123</strong>
-              </div>
 
               <p className="auth-switch-text">
                 {lang === 'hi' ? 'खाता नहीं है?' : "Don't have an account?"}
