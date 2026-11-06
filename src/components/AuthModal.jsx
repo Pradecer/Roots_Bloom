@@ -1,37 +1,50 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useApp } from '../context/AppContext';
-import { X, Sparkles } from 'lucide-react';
-import { LoginForm } from './auth/LoginForm';
 
 export const AuthModal = () => {
   const { 
     isAuthModalOpen, 
     setIsAuthModalOpen, 
+    loginUser, 
+    showToast,
     lang 
   } = useApp();
+
+  const [activeTab, setActiveTab] = useState('login'); // 'login' | 'register'
+  
+  // Login Form State
+  const [loginIdentifier, setLoginIdentifier] = useState('');
+  const [loginPassword, setLoginPassword] = useState('');
+  const [showLoginPassword, setShowLoginPassword] = useState(false);
+  const [rememberMe, setRememberMe] = useState(true);
+
+  // Register Form State
+  const [regName, setRegName] = useState('');
+  const [regPhone, setRegPhone] = useState('');
+  const [regEmail, setRegEmail] = useState('');
+  const [regPassword, setRegPassword] = useState('');
+  const [showRegPassword, setShowRegPassword] = useState(false);
+
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleClose = () => {
     setIsAuthModalOpen(false);
     try {
       sessionStorage.setItem('rb_login_popup_dismissed', 'true');
     } catch {
-      // storage quota or private window
+      // storage quota
     }
   };
 
-  // Scroll lock & Escape key listener
+  // Close on Escape & disable scroll
   useEffect(() => {
     if (!isAuthModalOpen) return;
 
-    // Prevent background scrolling while modal is open
     const originalOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
 
-    // Keyboard Escape listener
     const handleKeyDown = (e) => {
-      if (e.key === 'Escape') {
-        handleClose();
-      }
+      if (e.key === 'Escape') handleClose();
     };
 
     window.addEventListener('keydown', handleKeyDown);
@@ -44,50 +57,345 @@ export const AuthModal = () => {
 
   if (!isAuthModalOpen) return null;
 
+  const handleLoginSubmit = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    setTimeout(() => {
+      setIsLoading(false);
+      const clean = loginIdentifier.trim();
+      const storedUsers = JSON.parse(localStorage.getItem('rb_users_db') || '[]');
+      const found = storedUsers.find(
+        u => (u.phone === clean || u.email?.toLowerCase() === clean.toLowerCase()) && u.password === loginPassword
+      );
+
+      const userObj = found || {
+        name: clean.includes('@') ? clean.split('@')[0] : (clean === '9876543210' ? 'Priya Sharma' : 'Valued Customer'),
+        phone: clean.replace(/\D/g, '').length === 10 ? clean : '9876543210',
+        email: clean.includes('@') ? clean : 'customer@rootsbloom.local',
+        credits: 150
+      };
+
+      loginUser(userObj);
+      showToast(lang === 'hi' ? `लॉगिन सफल! स्वागत है ${userObj.name}` : `Login successful! Welcome ${userObj.name}`);
+      handleClose();
+    }, 500);
+  };
+
+  const handleRegisterSubmit = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    setTimeout(() => {
+      setIsLoading(false);
+      const cleanPhone = regPhone.replace(/\D/g, '');
+      const newUser = {
+        name: regName.trim(),
+        phone: cleanPhone,
+        email: regEmail.trim(),
+        password: regPassword,
+        credits: 200
+      };
+
+      const storedUsers = JSON.parse(localStorage.getItem('rb_users_db') || '[]');
+      const existsIndex = storedUsers.findIndex(u => u.phone === cleanPhone);
+      if (existsIndex >= 0) {
+        storedUsers[existsIndex] = newUser;
+      } else {
+        storedUsers.push(newUser);
+      }
+      localStorage.setItem('rb_users_db', JSON.stringify(storedUsers));
+
+      loginUser(newUser);
+      showToast(lang === 'hi' ? `अकाउंट तैयार! स्वागत है ${newUser.name}` : `Registration successful! Welcome to Roots_Bloom, ${newUser.name}`);
+      handleClose();
+    }, 500);
+  };
+
+  const handleForgotPassword = (e) => {
+    e.preventDefault();
+    alert(lang === 'hi' 
+      ? 'पासवर्ड रीसेट लिंक आपके रजिस्टर्ड ईमेल/मोबाइल पर भेज दिया जाएगा।' 
+      : 'Password reset link will be sent to your registered email.');
+  };
+
   return (
     <div 
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/65 backdrop-blur-md animate-fadeIn transition-all"
+      className="auth-modal-overlay" 
       onClick={handleClose}
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="modal-login-heading"
+      role="dialog" 
+      aria-modal="true" 
+      aria-labelledby="login-modal-title"
     >
-      {/* Floating Card Modal Container */}
       <div 
-        className="bg-white rounded-3xl shadow-2xl max-w-md w-full overflow-hidden border border-rule/80 relative animate-scaleUp transition-transform"
+        className="auth-modal-content" 
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Close Button - Circular floating top-right (reference Homage style) */}
+        {/* Close Button */}
         <button 
-          onClick={handleClose}
-          className="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-paper-warm hover:bg-rule/60 text-ink/70 hover:text-ink flex items-center justify-center transition-all shadow-xs"
+          className="auth-modal-close" 
+          onClick={handleClose} 
           aria-label="Close modal"
         >
-          <X size={16} />
+          <svg viewBox="0 0 24 24">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+          </svg>
         </button>
 
-        {/* Modal Top Header with Brand Badge */}
-        <div className="pt-8 pb-4 px-6 sm:px-8 text-center bg-gradient-to-b from-paper-warm/50 to-white border-b border-rule/40">
-          <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-brand-forest-subtle text-forest mb-3 shadow-xs border border-forest/10">
-            <span className="font-serif font-black text-xl tracking-tighter">RB</span>
+        {/* Modal Header */}
+        <div className="auth-modal-header">
+          <div className="auth-logo-badge">
+            <div className="auth-logo-img">RB</div>
+            <div>
+              <span className="brand-title">ROOTS_BLOOM</span>
+              <span className="brand-subtitle">{lang === 'hi' ? 'हस्तनिर्मित मिनिएचर' : 'BOTANICAL LIVING ART'}</span>
+            </div>
           </div>
-
-          <h3 id="modal-login-heading" className="text-2xl font-serif font-bold text-ink tracking-tight">
-            {lang === 'hi' ? 'वापसी पर स्वागत है' : 'Welcome Back'}
+          <h3 id="login-modal-title">
+            {activeTab === 'login' 
+              ? (lang === 'hi' ? 'वापसी पर स्वागत है' : 'Welcome Back') 
+              : (lang === 'hi' ? 'नया खाता बनाएं' : 'Create Account')}
           </h3>
-          <p className="text-xs text-muted mt-1 leading-relaxed max-w-xs mx-auto">
-            {lang === 'hi' 
-              ? 'अपने ऑर्डर्स और विशलिस्ट को एक्सेस करने के लिए साइन इन करें।' 
-              : 'Sign in to continue to your account and track your living planters.'}
+          <p>
+            {activeTab === 'login'
+              ? (lang === 'hi' ? 'अपने ऑर्डर्स, विशलिस्ट और रिवार्ड्स देखने के लिए साइन इन करें' : 'Sign in to manage your plant orders, wishlist & rewards')
+              : (lang === 'hi' ? 'साइनअप करें और अपने पहले ऑर्डर पर ₹200 का बोनस पाएं' : 'Sign up to unlock ₹200 welcome credits & tracking')}
           </p>
         </div>
 
-        {/* Modal Form Body */}
-        <div className="p-6 sm:p-8 pt-5">
-          <LoginForm 
-            onSuccess={() => handleClose()} 
-            showHeading={false}
-          />
+        {/* Auth Tabs (Login / Register) */}
+        <div className="auth-tabs">
+          <button 
+            type="button" 
+            className={`auth-tab-btn ${activeTab === 'login' ? 'active' : ''}`} 
+            onClick={() => setActiveTab('login')}
+          >
+            {lang === 'hi' ? 'लॉगिन' : 'Login'}
+          </button>
+          <button 
+            type="button" 
+            className={`auth-tab-btn ${activeTab === 'register' ? 'active' : ''}`} 
+            onClick={() => setActiveTab('register')}
+          >
+            {lang === 'hi' ? 'साइन अप' : 'Sign Up'}
+          </button>
+        </div>
+
+        <div className="auth-modal-body">
+          {/* ================= LOGIN FORM ================= */}
+          {activeTab === 'login' && (
+            <form className="auth-form-wrap" onSubmit={handleLoginSubmit}>
+              <div className="form-group-custom">
+                <label className="form-label-custom" htmlFor="login-email">
+                  {lang === 'hi' ? 'ईमेल या मोबाइल नंबर *' : 'Email or Phone *'}
+                </label>
+                <div className="input-icon-wrap">
+                  <svg className="input-icon" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                  <input 
+                    type="text" 
+                    id="login-email" 
+                    className="form-control-custom" 
+                    placeholder={lang === 'hi' ? 'ईमेल या 10-अंकों का मोबाइल नंबर' : 'Enter email or mobile number'} 
+                    value={loginIdentifier}
+                    onChange={(e) => setLoginIdentifier(e.target.value)}
+                    required 
+                    autoFocus
+                  />
+                </div>
+              </div>
+
+              <div className="form-group-custom">
+                <label className="form-label-custom" htmlFor="login-password">
+                  {lang === 'hi' ? 'पासवर्ड *' : 'Password *'}
+                </label>
+                <div className="input-icon-wrap">
+                  <svg className="input-icon" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+                  </svg>
+                  <input 
+                    type={showLoginPassword ? 'text' : 'password'} 
+                    id="login-password" 
+                    className="form-control-custom" 
+                    placeholder="••••••••" 
+                    value={loginPassword}
+                    onChange={(e) => setLoginPassword(e.target.value)}
+                    required 
+                  />
+                  <button 
+                    type="button" 
+                    className="password-toggle-btn" 
+                    onClick={() => setShowLoginPassword(!showLoginPassword)} 
+                    aria-label="Toggle password"
+                  >
+                    {showLoginPassword ? (
+                      <svg viewBox="0 0 24 24" style={{ width: '18px', height: '18px', fill: '#22533C' }}>
+                        <path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"/>
+                      </svg>
+                    ) : (
+                      <svg viewBox="0 0 24 24" style={{ width: '18px', height: '18px', fill: '#8c9b93' }}>
+                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                      </svg>
+                    )}
+                  </button>
+                </div>
+              </div>
+
+              <div className="auth-options">
+                <label className="remember-wrap">
+                  <input 
+                    type="checkbox" 
+                    id="login-remember" 
+                    checked={rememberMe}
+                    onChange={(e) => setRememberMe(e.target.checked)}
+                  />
+                  <span>{lang === 'hi' ? 'मुझे याद रखें' : 'Remember me'}</span>
+                </label>
+                <a 
+                  href="#" 
+                  className="forgot-link" 
+                  onClick={handleForgotPassword}
+                >
+                  {lang === 'hi' ? 'पासवर्ड भूल गए?' : 'Forgot Password?'}
+                </a>
+              </div>
+
+              <button type="submit" disabled={isLoading} className="auth-submit-btn">
+                {isLoading 
+                  ? (lang === 'hi' ? 'साइन इन हो रहा है...' : 'Signing in...') 
+                  : (lang === 'hi' ? 'साइन इन करें' : 'Sign In')}
+              </button>
+
+              <div className="auth-quick-demo">
+                💡 Demo Login: <strong>9876543210</strong> | Password: <strong>demo123</strong>
+              </div>
+
+              <p className="auth-switch-text">
+                {lang === 'hi' ? 'खाता नहीं है?' : "Don't have an account?"}
+                <button type="button" onClick={() => setActiveTab('register')}>
+                  {lang === 'hi' ? 'अभी रजिस्टर करें' : 'Register Now'}
+                </button>
+              </p>
+            </form>
+          )}
+
+          {/* ================= SIGN UP FORM ================= */}
+          {activeTab === 'register' && (
+            <form className="auth-form-wrap" onSubmit={handleRegisterSubmit}>
+              <div className="form-group-custom">
+                <label className="form-label-custom" htmlFor="reg-name">
+                  {lang === 'hi' ? 'पूरा नाम *' : 'Full Name *'}
+                </label>
+                <div className="input-icon-wrap">
+                  <svg className="input-icon" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                  </svg>
+                  <input 
+                    type="text" 
+                    id="reg-name" 
+                    className="form-control-custom" 
+                    placeholder="e.g. Priya Sharma" 
+                    value={regName}
+                    onChange={(e) => setRegName(e.target.value)}
+                    required 
+                    autoFocus
+                  />
+                </div>
+              </div>
+
+              <div className="form-group-custom">
+                <label className="form-label-custom" htmlFor="reg-phone">
+                  {lang === 'hi' ? 'मोबाइल नंबर *' : 'Phone Number *'}
+                </label>
+                <div className="input-icon-wrap">
+                  <svg className="input-icon" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                  </svg>
+                  <input 
+                    type="tel" 
+                    id="reg-phone" 
+                    className="form-control-custom" 
+                    placeholder="10-digit mobile number" 
+                    pattern="[0-9]{10}" 
+                    value={regPhone}
+                    onChange={(e) => setRegPhone(e.target.value)}
+                    required 
+                  />
+                </div>
+              </div>
+
+              <div className="form-group-custom">
+                <label className="form-label-custom" htmlFor="reg-email">
+                  {lang === 'hi' ? 'ईमेल पता *' : 'Email Address *'}
+                </label>
+                <div className="input-icon-wrap">
+                  <svg className="input-icon" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                  <input 
+                    type="email" 
+                    id="reg-email" 
+                    className="form-control-custom" 
+                    placeholder="name@domain.com" 
+                    value={regEmail}
+                    onChange={(e) => setRegEmail(e.target.value)}
+                    required 
+                  />
+                </div>
+              </div>
+
+              <div className="form-group-custom">
+                <label className="form-label-custom" htmlFor="reg-password">
+                  {lang === 'hi' ? 'पासवर्ड बनाएं *' : 'Create Password *'}
+                </label>
+                <div className="input-icon-wrap">
+                  <svg className="input-icon" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+                  </svg>
+                  <input 
+                    type={showRegPassword ? 'text' : 'password'} 
+                    id="reg-password" 
+                    className="form-control-custom" 
+                    placeholder={lang === 'hi' ? 'न्यूनतम 6 अक्षर' : 'Min. 6 characters'} 
+                    minLength={6} 
+                    value={regPassword}
+                    onChange={(e) => setRegPassword(e.target.value)}
+                    required 
+                  />
+                  <button 
+                    type="button" 
+                    className="password-toggle-btn" 
+                    onClick={() => setShowRegPassword(!showRegPassword)} 
+                    aria-label="Toggle password"
+                  >
+                    {showRegPassword ? (
+                      <svg viewBox="0 0 24 24" style={{ width: '18px', height: '18px', fill: '#22533C' }}>
+                        <path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"/>
+                      </svg>
+                    ) : (
+                      <svg viewBox="0 0 24 24" style={{ width: '18px', height: '18px', fill: '#8c9b93' }}>
+                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                      </svg>
+                    )}
+                  </button>
+                </div>
+              </div>
+
+              <button type="submit" disabled={isLoading} className="auth-submit-btn">
+                {isLoading 
+                  ? (lang === 'hi' ? 'खाता बन रहा है...' : 'Creating Account...') 
+                  : (lang === 'hi' ? 'अकाउंट बनाएं' : 'Create Account')}
+              </button>
+
+              <p className="auth-switch-text">
+                {lang === 'hi' ? 'पहले से खाता है?' : 'Already registered?'}
+                <button type="button" onClick={() => setActiveTab('login')}>
+                  {lang === 'hi' ? 'लॉग इन करें' : 'Log In'}
+                </button>
+              </p>
+            </form>
+          )}
         </div>
       </div>
     </div>
