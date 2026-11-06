@@ -150,6 +150,13 @@ export const AuthModal = () => {
         credits: 200
       };
 
+      if (!data.session && data.user?.identities && data.user.identities.length === 0) {
+        showToast(lang === 'hi' ? 'यह ईमेल पहले से रजिस्टर्ड है। कृपया लॉगिन करें।' : 'This email is already registered. Please sign in.');
+        setActiveTab('login');
+        setIsLoading(false);
+        return;
+      }
+
       loginUser(userObj);
       showToast(
         lang === 'hi' 
