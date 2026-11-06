@@ -2775,56 +2775,57 @@ export const CATEGORIES = [
   {
     "id": "all",
     "name": "All Products",
-    "name_hi": "सभी उत्पाद",
-    "count": 0
+    "name_hi": "सभी प्रोडक्ट्स",
+    "icon": "Grid",
+    "count": 25
   },
   {
     "id": "tray-gardens",
     "name": "Tray Gardens",
     "name_hi": "ट्रे गार्डन्स",
-    "categoryKey": "Tray Gardens",
+    "icon": "Sun",
     "count": 3
   },
   {
     "id": "theme-planters",
-    "name": "Pots & Planters",
+    "name": "Theme Planters",
     "name_hi": "थीम प्लांटर्स",
-    "categoryKey": "Theme Planters",
-    "count": 0
+    "icon": "Heart",
+    "count": 3
   },
   {
     "id": "bird-feeders",
     "name": "Bird Feeders",
     "name_hi": "बर्ड फीडर्स",
-    "categoryKey": "Bird Feeders",
+    "icon": "Feather",
     "count": 3
   },
   {
     "id": "couples-gifting",
     "name": "Couples & Gifting",
     "name_hi": "कपल एवं गिफ्टिंग",
-    "categoryKey": "Couples & Gifting",
+    "icon": "Users",
     "count": 7
   },
   {
     "id": "devotional",
-    "name": "Devotional & Vastu",
+    "name": "Devotional & Spiritual",
     "name_hi": "भक्ति एवं वास्तु",
-    "categoryKey": "Devotional",
-    "count": 0
+    "icon": "Sparkles",
+    "count": 1
   },
   {
     "id": "furniture-decor",
-    "name": "Furniture & Decor",
-    "name_hi": "फर्नीचर एवं डेकोर",
-    "categoryKey": "Furniture & Decor",
+    "name": "Garden Decor & Accents",
+    "name_hi": "गार्डन डेकोर व फर्नीचर",
+    "icon": "Home",
     "count": 4
   },
   {
     "id": "miniature-toys",
-    "name": "Miniature Toys",
-    "name_hi": "मिनी खिलौने",
-    "categoryKey": "Miniature Toys",
+    "name": "Miniature Figurines",
+    "name_hi": "मिनिएचर मूर्तियां",
+    "icon": "Smile",
     "count": 4
   }
 ];
@@ -2887,7 +2888,8 @@ export const EMOTIONAL_SHELVES = [
     "subtitle_hi": "घर के मंदिर और वर्क डेस्क के लिए शुभ एवं शांत वातावरण",
     "productIds": [
       "shiv-tray-garden",
-      "buddha-tray-garden"
+      "buddha-tray-garden",
+      "miniature-monk-buddha-trio"
     ]
   }
 ];

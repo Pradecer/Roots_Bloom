@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useApp } from './context/AppContext';
 import { Header } from './components/Header';
 import { BottomNav } from './components/BottomNav';
@@ -21,7 +21,20 @@ import { LoginPage } from './pages/LoginPage';
 import { ShieldCheck, Heart, MapPin, MessageSquare, Phone } from 'lucide-react';
 
 export const App = () => {
-  const { currentPage, toastMessage, navigateTo, lang, t } = useApp();
+  const { currentPage, toastMessage, navigateTo, user, setIsAuthModalOpen, lang, t } = useApp();
+
+  // 5-second automatic login popup for unauthenticated guests
+  useEffect(() => {
+    if (!user?.isLoggedIn && currentPage !== 'login') {
+      const alreadyDismissed = sessionStorage.getItem('rb_login_popup_dismissed');
+      if (!alreadyDismissed) {
+        const timer = setTimeout(() => {
+          setIsAuthModalOpen(true);
+        }, 5000);
+        return () => clearTimeout(timer);
+      }
+    }
+  }, [user?.isLoggedIn, currentPage, setIsAuthModalOpen]);
 
   const renderPage = () => {
     switch (currentPage) {
