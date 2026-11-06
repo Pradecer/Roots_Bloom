@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { PRODUCTS, CATEGORIES } from '../data/catalog';
 import { TRANSLATIONS } from '../data/translations';
+import { supabase, isSupabaseConfigured } from '../lib/supabase';
 
 const AppContext = createContext();
 
@@ -91,7 +92,49 @@ export const AppProvider = ({ children }) => {
     } catch {
       // storage quota
     }
+    if (isSupabaseConfigured) {
+      supabase.auth.signOut().catch(() => {});
+    }
   };
+
+  // Sync Supabase Auth state automatically
+  useEffect(() => {
+    if (!isSupabaseConfigured) return;
+
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (session?.user) {
+        const u = session.user;
+        const profileName = u.user_metadata?.full_name || u.user_metadata?.name || u.email?.split('@')[0] || 'Valued Customer';
+        setUser({
+          id: u.id,
+          name: profileName,
+          email: u.email,
+          phone: u.user_metadata?.phone || '',
+          isLoggedIn: true,
+          credits: 150
+        });
+      }
+    }).catch(() => {});
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      if (session?.user) {
+        const u = session.user;
+        const profileName = u.user_metadata?.full_name || u.user_metadata?.name || u.email?.split('@')[0] || 'Valued Customer';
+        setUser({
+          id: u.id,
+          name: profileName,
+          email: u.email,
+          phone: u.user_metadata?.phone || '',
+          isLoggedIn: true,
+          credits: 150
+        });
+      }
+    });
+
+    return () => {
+      subscription?.unsubscribe();
+    };
+  }, []);
 
   const [addresses, setAddresses] = useState([
     {

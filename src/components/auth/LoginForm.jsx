@@ -12,6 +12,7 @@ import {
 import { AuthFormField } from './AuthFormField';
 import { PasswordInput } from './PasswordInput';
 import { ForgotPasswordForm } from './ForgotPasswordForm';
+import { supabase, isSupabaseConfigured } from '../../lib/supabase';
 
 export const LoginForm = ({ 
   onSuccess, 
@@ -87,66 +88,88 @@ export const LoginForm = ({
     return Object.keys(errs).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setServerError('');
     if (!validate()) return;
 
+    if (!isSupabaseConfigured) {
+      showToast(
+        lang === 'hi' 
+          ? 'कृपया .env फाइल में Supabase URL और Anon Key जोड़ें।' 
+          : 'Please configure VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY in your .env file.'
+      );
+      return;
+    }
+
     setIsLoading(true);
 
-    setTimeout(() => {
-      setIsLoading(false);
+    try {
       const cleanInput = identifier.trim();
 
       if (mode === 'login') {
-        const storedUsers = JSON.parse(localStorage.getItem('rb_users_db') || '[]');
-        const found = storedUsers.find(
-          u => (u.phone === cleanInput || u.email?.toLowerCase() === cleanInput.toLowerCase()) && u.password === password
-        );
+        const userEmail = cleanInput.includes('@') ? cleanInput : `${cleanInput.replace(/\D/g, '')}@rootsbloom.local`;
+        const { data, error } = await supabase.auth.signInWithPassword({
+          email: userEmail,
+          password: password,
+        });
 
-        if (found) {
-          loginUser(found);
-          showToast(lang === 'hi' ? `स्वागत है, ${found.name}!` : `Welcome back, ${found.name}!`);
-          if (onSuccess) onSuccess(found);
-        } else if (cleanInput === '9876543210' || cleanInput === 'demo@rootsbloom.com') {
-          handleQuickDemo();
-        } else {
-          // Flexible instant session fallback
-          const userObj = {
-            name: cleanInput.includes('@') ? cleanInput.split('@')[0] : 'Valued Customer',
-            phone: cleanInput.replace(/\D/g, '').length === 10 ? cleanInput : '',
-            email: cleanInput.includes('@') ? cleanInput : '',
-            credits: 100
-          };
-          loginUser(userObj);
-          showToast(lang === 'hi' ? 'सफलतापूर्वक साइन इन हो गया!' : 'Signed in successfully!');
-          if (onSuccess) onSuccess(userObj);
+        if (error) {
+          setServerError(error.message);
+          setIsLoading(false);
+          return;
         }
+
+        const profileName = data.user?.user_metadata?.full_name || data.user?.user_metadata?.name || data.user?.email?.split('@')[0] || 'Valued Customer';
+        const userObj = {
+          id: data.user?.id,
+          name: profileName,
+          phone: data.user?.user_metadata?.phone || '',
+          email: data.user?.email,
+          credits: 100
+        };
+        loginUser(userObj);
+        showToast(lang === 'hi' ? `स्वागत है, ${profileName}!` : `Welcome back, ${profileName}!`);
+        if (onSuccess) onSuccess(userObj);
       } else {
         // Register Mode
         const cleanPhone = phone.replace(/\D/g, '');
-        const newUser = {
-          name: name.trim(),
-          phone: cleanPhone,
-          email: identifier.trim() || `${cleanPhone}@rootsbloom.local`,
+        const userEmail = cleanInput.includes('@') ? cleanInput : `${cleanPhone}@rootsbloom.local`;
+        const { data, error } = await supabase.auth.signUp({
+          email: userEmail,
           password: password,
+          options: {
+            data: {
+              full_name: name.trim(),
+              phone: cleanPhone,
+            }
+          }
+        });
+
+        if (error) {
+          setServerError(error.message);
+          setIsLoading(false);
+          return;
+        }
+
+        const profileName = name.trim();
+        const newUser = {
+          id: data.user?.id,
+          name: profileName,
+          phone: cleanPhone,
+          email: userEmail,
           credits: 200
         };
-
-        const storedUsers = JSON.parse(localStorage.getItem('rb_users_db') || '[]');
-        const existsIndex = storedUsers.findIndex(u => u.phone === cleanPhone);
-        if (existsIndex >= 0) {
-          storedUsers[existsIndex] = newUser;
-        } else {
-          storedUsers.push(newUser);
-        }
-        localStorage.setItem('rb_users_db', JSON.stringify(storedUsers));
 
         loginUser(newUser);
         showToast(lang === 'hi' ? 'खाता बन गया! ₹200 का वेलकम बोनस मिला' : 'Account created! ₹200 welcome bonus added');
         if (onSuccess) onSuccess(newUser);
       }
-    }, 600);
+    } catch (err) {
+      setServerError(err.message || 'Authentication failed');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   if (view === 'forgot') {

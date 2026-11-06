@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useApp } from '../context/AppContext';
+import { supabase, isSupabaseConfigured } from '../lib/supabase';
 
 export const AuthModal = () => {
   const { 
@@ -57,66 +58,128 @@ export const AuthModal = () => {
 
   if (!isAuthModalOpen) return null;
 
-  const handleLoginSubmit = (e) => {
+  const handleLoginSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
 
-    setTimeout(() => {
-      setIsLoading(false);
-      const clean = loginIdentifier.trim();
-      const storedUsers = JSON.parse(localStorage.getItem('rb_users_db') || '[]');
-      const found = storedUsers.find(
-        u => (u.phone === clean || u.email?.toLowerCase() === clean.toLowerCase()) && u.password === loginPassword
-      );
+    try {
+      if (!isSupabaseConfigured) {
+        showToast(
+          lang === 'hi' 
+            ? 'कृपया .env फाइल में Supabase URL और Anon Key जोड़ें।' 
+            : 'Please configure VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY in your .env file.'
+        );
+        setIsLoading(false);
+        return;
+      }
 
-      const userObj = found || {
-        name: clean.includes('@') ? clean.split('@')[0] : (clean === '9876543210' ? 'Priya Sharma' : 'Valued Customer'),
-        phone: clean.replace(/\D/g, '').length === 10 ? clean : '9876543210',
-        email: clean.includes('@') ? clean : 'customer@rootsbloom.local',
+      const clean = loginIdentifier.trim();
+      const userEmail = clean.includes('@') ? clean : `${clean.replace(/\D/g, '')}@rootsbloom.local`;
+
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email: userEmail,
+        password: loginPassword,
+      });
+
+      if (error) {
+        showToast(error.message);
+        setIsLoading(false);
+        return;
+      }
+
+      const profileName = data.user?.user_metadata?.full_name || data.user?.user_metadata?.name || data.user?.email?.split('@')[0] || 'Valued Customer';
+      const userObj = {
+        id: data.user?.id,
+        name: profileName,
+        email: data.user?.email,
+        phone: data.user?.user_metadata?.phone || '',
         credits: 150
       };
 
       loginUser(userObj);
-      showToast(lang === 'hi' ? `लॉगिन सफल! स्वागत है ${userObj.name}` : `Login successful! Welcome ${userObj.name}`);
+      showToast(lang === 'hi' ? `लॉगिन सफल! स्वागत है ${profileName}` : `Login successful! Welcome ${profileName}`);
       handleClose();
-    }, 500);
+    } catch (err) {
+      showToast(err.message || 'Login failed');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
-  const handleRegisterSubmit = (e) => {
+  const handleRegisterSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
 
-    setTimeout(() => {
-      setIsLoading(false);
+    try {
+      if (!isSupabaseConfigured) {
+        showToast(
+          lang === 'hi' 
+            ? 'कृपया .env फाइल में Supabase URL और Anon Key जोड़ें।' 
+            : 'Please configure VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY in your .env file.'
+        );
+        setIsLoading(false);
+        return;
+      }
+
       const cleanPhone = regPhone.replace(/\D/g, '');
-      const newUser = {
-        name: regName.trim(),
-        phone: cleanPhone,
-        email: regEmail.trim(),
+      const userEmail = regEmail.trim();
+
+      const { data, error } = await supabase.auth.signUp({
+        email: userEmail,
         password: regPassword,
+        options: {
+          data: {
+            full_name: regName.trim(),
+            phone: cleanPhone,
+          }
+        }
+      });
+
+      if (error) {
+        showToast(error.message);
+        setIsLoading(false);
+        return;
+      }
+
+      const profileName = regName.trim();
+      const userObj = {
+        id: data.user?.id,
+        name: profileName,
+        email: userEmail,
+        phone: cleanPhone,
         credits: 200
       };
 
-      const storedUsers = JSON.parse(localStorage.getItem('rb_users_db') || '[]');
-      const existsIndex = storedUsers.findIndex(u => u.phone === cleanPhone);
-      if (existsIndex >= 0) {
-        storedUsers[existsIndex] = newUser;
-      } else {
-        storedUsers.push(newUser);
-      }
-      localStorage.setItem('rb_users_db', JSON.stringify(storedUsers));
-
-      loginUser(newUser);
-      showToast(lang === 'hi' ? `अकाउंट तैयार! स्वागत है ${newUser.name}` : `Registration successful! Welcome to Roots_Bloom, ${newUser.name}`);
+      loginUser(userObj);
+      showToast(
+        lang === 'hi' 
+          ? `अकाउंट तैयार! स्वागत है ${profileName}` 
+          : `Registration successful! Welcome to Roots_Bloom, ${profileName}`
+      );
       handleClose();
-    }, 500);
+    } catch (err) {
+      showToast(err.message || 'Registration failed');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
-  const handleForgotPassword = (e) => {
+  const handleForgotPassword = async (e) => {
     e.preventDefault();
-    alert(lang === 'hi' 
-      ? 'पासवर्ड रीसेट लिंक आपके रजिस्टर्ड ईमेल/मोबाइल पर भेज दिया जाएगा।' 
-      : 'Password reset link will be sent to your registered email.');
+    if (!loginIdentifier.trim() || !loginIdentifier.includes('@')) {
+      alert(lang === 'hi' ? 'कृपया अपना ईमेल पता दर्ज करें।' : 'Please enter your registered email address.');
+      return;
+    }
+    if (isSupabaseConfigured) {
+      const { error } = await supabase.auth.resetPasswordForEmail(loginIdentifier.trim());
+      if (error) {
+        alert(error.message);
+      } else {
+        alert(lang === 'hi' ? 'पासवर्ड रीसेट लिंक आपके ईमेल पर भेज दिया गया है।' : 'Password reset link sent to your email.');
+      }
+    } else {
+      alert(lang === 'hi' ? 'पासवर्ड रीसेट लिंक आपके रजिस्टर्ड ईमेल पर भेज दिया जाएगा।' : 'Password reset link will be sent to your registered email.');
+    }
   };
 
   return (
