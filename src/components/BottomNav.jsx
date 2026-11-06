@@ -4,7 +4,7 @@ import { PRODUCTS } from '../data/catalog';
 import { Home, Grid, Heart, Package, User } from 'lucide-react';
 
 export const BottomNav = () => {
-  const { currentPage, navigateTo, cart, wishlist, t } = useApp();
+  const { currentPage, navigateTo, cart, wishlist, user, lang, t } = useApp();
   const wishlistCount = wishlist.filter((id) => PRODUCTS.some((p) => p.id === id)).length;
 
   // On PDP and Checkout, mobile sticky CTA takes full precedence so they do not overlap
@@ -48,11 +48,11 @@ export const BottomNav = () => {
       </button>
 
       <button 
-        className={`bottom-nav-item ${currentPage === 'account' ? 'active' : ''}`}
-        onClick={() => navigateTo('account')}
+        className={`bottom-nav-item ${currentPage === 'account' || currentPage === 'login' ? 'active' : ''}`}
+        onClick={() => navigateTo(user?.isLoggedIn ? 'account' : 'login')}
       >
         <User size={20} />
-        <span>{t('account')}</span>
+        <span>{user?.isLoggedIn ? t('account') : (lang === 'hi' ? 'लॉगिन' : 'Login')}</span>
       </button>
     </nav>
   );

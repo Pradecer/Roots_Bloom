@@ -16,6 +16,7 @@ import { OrderTrackingPage } from './pages/OrderTrackingPage';
 import { WishlistPage } from './pages/WishlistPage';
 import { AccountPage } from './pages/AccountPage';
 import { ReferralPage } from './pages/ReferralPage';
+import { LoginPage } from './pages/LoginPage';
 
 import { ShieldCheck, Heart, MapPin, MessageSquare, Phone } from 'lucide-react';
 
@@ -42,6 +43,8 @@ export const App = () => {
         return <WishlistPage />;
       case 'account':
         return <AccountPage />;
+      case 'login':
+        return <LoginPage />;
       case 'referral':
         return <ReferralPage />;
       default:

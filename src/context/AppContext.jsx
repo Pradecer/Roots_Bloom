@@ -55,15 +55,43 @@ export const AppProvider = ({ children }) => {
     try {
       const saved = localStorage.getItem('rb_user');
       return saved ? JSON.parse(saved) : {
-        phone: '9876543210',
-        name: 'Priya Sharma',
-        isLoggedIn: true,
-        credits: 150
+        phone: '',
+        name: 'Guest User',
+        isLoggedIn: false,
+        credits: 0
       };
     } catch {
-      return { phone: '9876543210', name: 'Priya Sharma', isLoggedIn: true, credits: 150 };
+      return { phone: '', name: 'Guest User', isLoggedIn: false, credits: 0 };
     }
   });
+
+  const loginUser = (userData) => {
+    const fullUser = {
+      ...userData,
+      isLoggedIn: true
+    };
+    setUser(fullUser);
+    try {
+      localStorage.setItem('rb_user', JSON.stringify(fullUser));
+    } catch {
+      // storage quota or private mode
+    }
+  };
+
+  const logoutUser = () => {
+    const guest = {
+      phone: '',
+      name: 'Guest User',
+      isLoggedIn: false,
+      credits: 0
+    };
+    setUser(guest);
+    try {
+      localStorage.removeItem('rb_user');
+    } catch {
+      // storage quota
+    }
+  };
 
   const [addresses, setAddresses] = useState([
     {
@@ -382,6 +410,8 @@ export const AppProvider = ({ children }) => {
         toggleWishlist,
         user,
         setUser,
+        loginUser,
+        logoutUser,
         addresses,
         setAddresses,
         selectedAddressId,

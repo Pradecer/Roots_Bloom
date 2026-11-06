@@ -270,12 +270,12 @@ export const Header = () => {
             </button>
 
             <button 
-              className={`nav-action-btn ${currentPage === 'account' ? 'active' : ''}`}
-              onClick={() => navigateTo('account')}
-              title="Profile & Address"
+              className={`nav-action-btn ${currentPage === 'account' || currentPage === 'login' ? 'active' : ''}`}
+              onClick={() => navigateTo(user?.isLoggedIn ? 'account' : 'login')}
+              title={user?.isLoggedIn ? "Profile & Address" : "Log In / Register"}
             >
               <User size={20} />
-              <span className="action-label">{user?.isLoggedIn ? user.name.split(' ')[0] : t('account')}</span>
+              <span className="action-label">{user?.isLoggedIn ? user.name.split(' ')[0] : (lang === 'hi' ? 'लॉगिन' : 'Login')}</span>
             </button>
           </div>
         </div>

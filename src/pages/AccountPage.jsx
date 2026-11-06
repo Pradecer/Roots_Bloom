@@ -17,7 +17,8 @@ import {
 export const AccountPage = () => {
   const { 
     user, 
-    setUser, 
+    setUser,
+    logoutUser, 
     orders, 
     addresses, 
     navigateTo, 
@@ -30,7 +31,7 @@ export const AccountPage = () => {
   } = useApp();
 
   const handleLogout = () => {
-    setUser({ phone: '', name: 'Guest User', isLoggedIn: false, credits: 0 });
+    logoutUser(); navigateTo('login');
     showToast(lang === 'hi' ? 'लॉगआउट हो गया' : 'Logged out successfully');
   };
 
