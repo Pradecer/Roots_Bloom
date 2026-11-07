@@ -178,6 +178,21 @@ export const AppProvider = ({ children }) => {
     }
   };
 
+  // Sync user profile to public.profiles table
+  const syncProfile = async (userId, email, name, phone) => {
+    if (!isSupabaseConfigured || !userId) return;
+    try {
+      await supabase.from('profiles').upsert({
+        id: userId,
+        name: name || '',
+        phone: phone || '',
+        email: email || ''
+      });
+    } catch (err) {
+      console.warn('Profile sync warning:', err);
+    }
+  };
+
   const loginUser = (userData) => {
     const fullUser = {
       ...userData,
@@ -190,6 +205,7 @@ export const AppProvider = ({ children }) => {
       // storage quota
     }
     if (fullUser.id) {
+      syncProfile(fullUser.id, fullUser.email, fullUser.name, fullUser.phone);
       fetchUserAddresses(fullUser.id);
       fetchUserOrders(fullUser.id);
     }
@@ -227,14 +243,16 @@ export const AppProvider = ({ children }) => {
       if (session?.user) {
         const u = session.user;
         const profileName = u.user_metadata?.full_name || u.user_metadata?.name || u.email?.split('@')[0] || 'Valued Customer';
+        const userPhone = u.user_metadata?.phone || '';
         setUser({
           id: u.id,
           name: profileName,
           email: u.email,
-          phone: u.user_metadata?.phone || '',
+          phone: userPhone,
           isLoggedIn: true,
           credits: 150
         });
+        syncProfile(u.id, u.email, profileName, userPhone);
         fetchUserAddresses(u.id);
         fetchUserOrders(u.id);
       }
@@ -244,14 +262,16 @@ export const AppProvider = ({ children }) => {
       if (session?.user) {
         const u = session.user;
         const profileName = u.user_metadata?.full_name || u.user_metadata?.name || u.email?.split('@')[0] || 'Valued Customer';
+        const userPhone = u.user_metadata?.phone || '';
         setUser({
           id: u.id,
           name: profileName,
           email: u.email,
-          phone: u.user_metadata?.phone || '',
+          phone: userPhone,
           isLoggedIn: true,
           credits: 150
         });
+        syncProfile(u.id, u.email, profileName, userPhone);
         fetchUserAddresses(u.id);
         fetchUserOrders(u.id);
       }

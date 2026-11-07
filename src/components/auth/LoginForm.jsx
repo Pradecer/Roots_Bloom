@@ -144,6 +144,15 @@ export const LoginForm = ({
           credits: 200
         };
 
+        if (data.user?.id) {
+          await supabase.from('profiles').upsert({
+            id: data.user.id,
+            name: profileName,
+            phone: cleanPhone,
+            email: userEmail
+          }).catch(() => {});
+        }
+
         loginUser(newUser);
         showToast(lang === 'hi' ? 'खाता बन गया! ₹200 का वेलकम बोनस मिला' : 'Account created! ₹200 welcome bonus added');
         if (onSuccess) onSuccess(newUser);
