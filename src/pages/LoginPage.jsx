@@ -35,10 +35,10 @@ export const LoginPage = () => {
     
     // Duplicate each list for seamless infinite loop
     return {
-      c1: [...col1, ...col1],
-      c2: [...col2, ...col2],
-      c3: [...col3, ...col3],
-      c4: [...col4, ...col4]
+      c1: [...col1, ...col1, ...col1, ...col1],
+      c2: [...col2, ...col2, ...col2, ...col2],
+      c3: [...col3, ...col3, ...col3, ...col3],
+      c4: [...col4, ...col4, ...col4, ...col4]
     };
   }, []);
 
@@ -264,11 +264,30 @@ export const LoginPage = () => {
       <div className="canva-login-center-card">
         {/* Header */}
         <div className="auth-modal-header" style={{ paddingBottom: '16px' }}>
-          <div className="auth-logo-badge">
-            <div className="auth-logo-img">RB</div>
-            <div>
-              <span className="brand-title">ROOTS_BLOOM</span>
-              <span className="brand-subtitle">{lang === 'hi' ? 'हस्तनिर्मित मिनिएचर' : 'BOTANICAL LIVING ART'}</span>
+          <div className="auth-logo-badge" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px' }}>
+            <img 
+              src="/logo.png" 
+              alt="Roots & Bloom" 
+              className="auth-logo-image" 
+              style={{ 
+                width: '48px', 
+                height: '48px', 
+                minWidth: '48px', 
+                minHeight: '48px', 
+                maxWidth: '48px', 
+                maxHeight: '48px', 
+                borderRadius: '50%', 
+                objectFit: 'contain',
+                border: '1.5px solid rgba(45, 106, 79, 0.25)',
+                background: '#ffffff',
+                padding: '2px',
+                display: 'block',
+                flexShrink: 0
+              }} 
+            />
+            <div style={{ textAlign: 'left' }}>
+              <span className="brand-title">ROOTS & BLOOM</span>
+              <span className="brand-subtitle">{lang === 'hi' ? 'केयर की जड़ें, प्यार के फूल' : 'Roots of care, blooms of love'}</span>
             </div>
           </div>
           <h3 style={{ marginBottom: 0 }}>

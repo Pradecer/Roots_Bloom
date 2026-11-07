@@ -121,9 +121,39 @@ export const Header = () => {
                 </button>
               )}
               {/* Brand Logo */}
-              <div className="brand-wrap" onClick={() => navigateTo('home')}>
-                <span className="brand-logo-text">Roots_Bloom</span>
-                <span className="brand-subtext">{lang === 'hi' ? 'हस्तनिर्मित जीवित गार्डन्स' : 'Handcrafted Miniature Gardens'}</span>
+              <div 
+                className="brand-wrap" 
+                style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '10px', cursor: 'pointer' }}
+                onClick={() => navigateTo('home')}
+              >
+                <img 
+                  src="/logo.png" 
+                  alt="Roots & Bloom" 
+                  className="header-brand-logo-img"
+                  style={{ 
+                    width: '44px', 
+                    height: '44px', 
+                    minWidth: '44px', 
+                    minHeight: '44px', 
+                    maxWidth: '44px', 
+                    maxHeight: '44px', 
+                    borderRadius: '50%', 
+                    objectFit: 'contain',
+                    border: '1px solid rgba(45, 106, 79, 0.25)',
+                    background: '#ffffff',
+                    padding: '2px',
+                    display: 'block',
+                    flexShrink: 0
+                  }}
+                />
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'center', lineHeight: 1.15 }}>
+                  <span className="brand-logo-text" style={{ fontSize: '20px', fontWeight: 700, color: '#162B20', fontFamily: 'serif', display: 'block', margin: 0, padding: 0 }}>
+                    Roots & Bloom
+                  </span>
+                  <span className="brand-subtext" style={{ fontSize: '10.5px', color: '#C85A32', fontWeight: 600, display: 'block', marginTop: '2px', letterSpacing: '0.02em', whiteSpace: 'nowrap' }}>
+                    {lang === 'hi' ? 'केयर की जड़ें, प्यार के फूल' : 'Roots of care, blooms of love'}
+                  </span>
+                </div>
               </div>
             </div>
 
