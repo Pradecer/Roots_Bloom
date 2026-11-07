@@ -11,7 +11,6 @@ export const AppProvider = ({ children }) => {
   const [selectedProductId, setSelectedProductId] = useState(() => PRODUCTS[0]?.id || 'shiv-tray-garden');
   const [activeCategory, setActiveCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
-  const [activeOrderId, setActiveOrderId] = useState('RB-2026-89412');
 
   // Language Preference ('en' | 'hi')
   const [lang, setLang] = useState(() => localStorage.getItem('rb_lang') || 'en');
@@ -66,6 +65,119 @@ export const AppProvider = ({ children }) => {
     }
   });
 
+  const [addresses, setAddresses] = useState(() => {
+    try {
+      const saved = localStorage.getItem('rb_saved_addresses');
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  });
+  const [selectedAddressId, setSelectedAddressId] = useState(() => {
+    try {
+      const saved = localStorage.getItem('rb_saved_addresses');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (parsed.length > 0) return parsed[0].id;
+      }
+      return '';
+    } catch {
+      return '';
+    }
+  });
+
+  // Orders State (defaults to empty or loaded from storage)
+  const [orders, setOrders] = useState(() => {
+    try {
+      const saved = localStorage.getItem('rb_saved_orders');
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  });
+
+  const [activeOrderId, setActiveOrderId] = useState(() => {
+    try {
+      const saved = localStorage.getItem('rb_saved_orders');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (parsed.length > 0) return parsed[0].orderId;
+      }
+      return '';
+    } catch {
+      return '';
+    }
+  });
+
+  // Fetch user addresses from Supabase
+  const fetchUserAddresses = async (userId) => {
+    if (!isSupabaseConfigured || !userId) return;
+    try {
+      const { data, error } = await supabase
+        .from('user_addresses')
+        .select('*')
+        .eq('user_id', userId)
+        .order('created_at', { ascending: false });
+
+      if (!error && Array.isArray(data) && data.length > 0) {
+        const formatted = data.map((row) => ({
+          id: row.id,
+          label: row.label || 'Home',
+          name: row.name,
+          phone: row.phone,
+          line1: row.line1,
+          line2: row.line2 || '',
+          city: row.city,
+          state: row.state,
+          pincode: row.pincode,
+          isDefault: !!row.is_default
+        }));
+        setAddresses(formatted);
+        try {
+          localStorage.setItem('rb_saved_addresses', JSON.stringify(formatted));
+        } catch {}
+        const defaultAddr = formatted.find((a) => a.isDefault) || formatted[0];
+        setSelectedAddressId(defaultAddr.id);
+      }
+    } catch (err) {
+      console.warn('Supabase user_addresses table not queried or not yet created:', err);
+    }
+  };
+
+  // Fetch user orders from Supabase
+  const fetchUserOrders = async (userId) => {
+    if (!isSupabaseConfigured || !userId) return;
+    try {
+      const { data, error } = await supabase
+        .from('orders')
+        .select('*')
+        .eq('user_id', userId)
+        .order('created_at', { ascending: false });
+
+      if (!error && Array.isArray(data) && data.length > 0) {
+        const formatted = data.map((row) => ({
+          orderId: row.id,
+          date: new Date(row.created_at).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }),
+          items: row.items || [],
+          total: row.total,
+          paymentMethod: row.payment_method,
+          status: row.status || 'placed',
+          address: row.shipping_address || {},
+          estimatedArrival: 'In 3-5 Days'
+        }));
+        setOrders(formatted);
+        try {
+          localStorage.setItem('rb_saved_orders', JSON.stringify(formatted));
+        } catch {}
+        if (formatted.length > 0) {
+          setActiveOrderId(formatted[0].orderId);
+        }
+      }
+    } catch (err) {
+      console.warn('Supabase orders table not queried or not yet created:', err);
+    }
+  };
+
   const loginUser = (userData) => {
     const fullUser = {
       ...userData,
@@ -75,7 +187,11 @@ export const AppProvider = ({ children }) => {
     try {
       localStorage.setItem('rb_user', JSON.stringify(fullUser));
     } catch {
-      // storage quota or private mode
+      // storage quota
+    }
+    if (fullUser.id) {
+      fetchUserAddresses(fullUser.id);
+      fetchUserOrders(fullUser.id);
     }
   };
 
@@ -89,9 +205,15 @@ export const AppProvider = ({ children }) => {
     setUser(guest);
     try {
       localStorage.removeItem('rb_user');
+      localStorage.removeItem('rb_saved_addresses');
+      localStorage.removeItem('rb_saved_orders');
     } catch {
       // storage quota
     }
+    setAddresses([]);
+    setOrders([]);
+    setSelectedAddressId('');
+    setActiveOrderId('');
     if (isSupabaseConfigured) {
       supabase.auth.signOut().catch(() => {});
     }
@@ -113,6 +235,8 @@ export const AppProvider = ({ children }) => {
           isLoggedIn: true,
           credits: 150
         });
+        fetchUserAddresses(u.id);
+        fetchUserOrders(u.id);
       }
     }).catch(() => {});
 
@@ -128,6 +252,8 @@ export const AppProvider = ({ children }) => {
           isLoggedIn: true,
           credits: 150
         });
+        fetchUserAddresses(u.id);
+        fetchUserOrders(u.id);
       }
     });
 
@@ -135,55 +261,6 @@ export const AppProvider = ({ children }) => {
       subscription?.unsubscribe();
     };
   }, []);
-
-  const [addresses, setAddresses] = useState([
-    {
-      id: 'addr-1',
-      label: 'Home',
-      name: 'Priya Sharma',
-      phone: '9876543210',
-      line1: 'Flat 402, Green Meadows Tower B',
-      line2: 'Near Central Park',
-      pincode: '110001',
-      city: 'New Delhi',
-      state: 'Delhi',
-      isDefault: true
-    },
-    {
-      id: 'addr-2',
-      label: 'Work',
-      name: 'Priya Sharma',
-      phone: '9876543210',
-      line1: 'Level 5, Cyber Park Building',
-      line2: 'DLF Phase 2',
-      pincode: '122002',
-      city: 'Gurugram',
-      state: 'Haryana',
-      isDefault: false
-    }
-  ]);
-  const [selectedAddressId, setSelectedAddressId] = useState('addr-1');
-
-  // Orders State
-  const [orders, setOrders] = useState([
-    {
-      orderId: 'RB-2026-89412',
-      date: '06 Sep 2026',
-      items: [
-        { productId: 'fairy-dream-miniature-tray-garden', qty: 1, price: 1499 },
-        { productId: 'miniature-diy-accessories-kit', qty: 1, price: 349 }
-      ],
-      total: 1848,
-      paymentMethod: 'COD',
-      status: 'being_handcrafted', // placed | being_handcrafted | packed | out_for_delivery | delivered
-      address: {
-        line1: 'Flat 402, Green Meadows Tower B',
-        city: 'New Delhi',
-        pincode: '110001'
-      },
-      estimatedArrival: 'Thu, 10 Sep 2026'
-    }
-  ]);
 
   // Modals & Feedback Toast
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
@@ -383,8 +460,93 @@ export const AppProvider = ({ children }) => {
     setIsShareModalOpen(true);
   };
 
-  const placeOrder = (paymentMethod = 'COD') => {
-    const selectedAddr = addresses.find((a) => a.id === selectedAddressId) || addresses[0];
+  // Save Address (syncs locally and to Supabase user_addresses if user is logged in)
+  const saveAddress = async (newAddr) => {
+    const tempId = newAddr.id || `addr-${Date.now()}`;
+    let finalId = tempId;
+
+    if (isSupabaseConfigured && user?.id) {
+      try {
+        const { data, error } = await supabase
+          .from('user_addresses')
+          .insert({
+            user_id: user.id,
+            label: newAddr.label || 'Home',
+            name: newAddr.name,
+            phone: newAddr.phone,
+            line1: newAddr.line1,
+            line2: newAddr.line2 || '',
+            city: newAddr.city,
+            state: newAddr.state,
+            pincode: newAddr.pincode,
+            is_default: !!newAddr.isDefault
+          })
+          .select()
+          .single();
+
+        if (!error && data) {
+          finalId = data.id;
+        } else if (error) {
+          console.warn('Supabase user_addresses insert warning:', error);
+        }
+      } catch (err) {
+        console.warn('Failed to insert address into Supabase:', err);
+      }
+    }
+
+    const addressObj = {
+      ...newAddr,
+      id: finalId
+    };
+
+    setAddresses((prev) => {
+      const updated = [addressObj, ...prev.filter((a) => a.id !== addressObj.id)];
+      try {
+        localStorage.setItem('rb_saved_addresses', JSON.stringify(updated));
+      } catch {}
+      return updated;
+    });
+    setSelectedAddressId(finalId);
+    showToast(lang === 'hi' ? 'पता सफलतापूर्वक सुरक्षित हो गया!' : 'Address saved successfully!');
+    return addressObj;
+  };
+
+  // Delete Address (syncs locally and Supabase)
+  const deleteAddress = async (addressId) => {
+    if (isSupabaseConfigured && user?.id) {
+      try {
+        await supabase
+          .from('user_addresses')
+          .delete()
+          .eq('id', addressId)
+          .eq('user_id', user.id);
+      } catch (err) {
+        console.warn('Failed to delete address from Supabase:', err);
+      }
+    }
+
+    setAddresses((prev) => {
+      const updated = prev.filter((a) => a.id !== addressId);
+      try {
+        localStorage.setItem('rb_saved_addresses', JSON.stringify(updated));
+      } catch {}
+      return updated;
+    });
+
+    if (selectedAddressId === addressId) {
+      setSelectedAddressId('');
+    }
+    showToast(lang === 'hi' ? 'पता हटा दिया गया' : 'Address removed');
+  };
+
+  const placeOrder = async (paymentMethod = 'COD') => {
+    const selectedAddr = addresses.find((a) => a.id === selectedAddressId) || addresses[0] || {
+      line1: 'Selected Delivery Location',
+      city: 'Delhi',
+      pincode: pincode,
+      name: user?.name || 'Customer',
+      phone: user?.phone || ''
+    };
     const newOrderId = `RB-${new Date().getFullYear()}-${Math.floor(10000 + Math.random() * 90000)}`;
     
     const newOrder = {
@@ -397,16 +559,45 @@ export const AppProvider = ({ children }) => {
       })),
       total: cartGrandTotal,
       paymentMethod,
-      status: 'being_handcrafted',
+      status: 'placed',
       address: {
+        name: selectedAddr.name || user?.name || 'Customer',
+        phone: selectedAddr.phone || user?.phone || '',
         line1: selectedAddr.line1,
+        line2: selectedAddr.line2 || '',
         city: selectedAddr.city,
+        state: selectedAddr.state || '',
         pincode: selectedAddr.pincode
       },
-      estimatedArrival: 'Thu, 10 Sep 2026'
+      estimatedArrival: 'In 3-5 Days'
     };
 
-    setOrders([newOrder, ...orders]);
+    // Sync order to Supabase orders table if configured & logged in
+    if (isSupabaseConfigured && user?.id) {
+      try {
+        await supabase.from('orders').insert({
+          id: newOrderId,
+          user_id: user.id,
+          user_email: user.email,
+          items: newOrder.items,
+          total: newOrder.total,
+          payment_method: newOrder.paymentMethod,
+          status: newOrder.status,
+          shipping_address: newOrder.address
+        });
+      } catch (err) {
+        console.warn('Supabase orders table insert warning:', err);
+      }
+    }
+
+    setOrders((prev) => {
+      const updated = [newOrder, ...prev];
+      try {
+        localStorage.setItem('rb_saved_orders', JSON.stringify(updated));
+      } catch {}
+      return updated;
+    });
+
     setActiveOrderId(newOrderId);
     clearCart();
     setAppliedCoupon(null);
@@ -457,6 +648,9 @@ export const AppProvider = ({ children }) => {
         logoutUser,
         addresses,
         setAddresses,
+        saveAddress,
+        deleteAddress,
+        fetchUserAddresses,
         selectedAddressId,
         setSelectedAddressId,
         orders,

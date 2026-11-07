@@ -413,7 +413,7 @@ export const LoginPage = () => {
                     type="text" 
                     id="page-reg-name" 
                     className="form-control-custom" 
-                    placeholder="e.g. Priya Sharma" 
+                    placeholder="e.g. Rahul Verma" 
                     value={regName}
                     onChange={(e) => setRegName(e.target.value)}
                     required 

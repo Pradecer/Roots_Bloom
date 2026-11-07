@@ -375,7 +375,7 @@ export const AuthModal = () => {
                     type="text" 
                     id="reg-name" 
                     className="form-control-custom" 
-                    placeholder="e.g. Priya Sharma" 
+                    placeholder="e.g. Rahul Verma" 
                     value={regName}
                     onChange={(e) => setRegName(e.target.value)}
                     required 

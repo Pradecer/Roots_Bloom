@@ -36,23 +36,6 @@ export const LoginForm = ({
   const [serverError, setServerError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  // Quick 1-Click Demo Login
-  const handleQuickDemo = () => {
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
-      const demoUser = {
-        name: 'Priya Sharma',
-        phone: '9876543210',
-        email: 'priya@rootsbloom.com',
-        credits: 150
-      };
-      loginUser(demoUser);
-      showToast(lang === 'hi' ? 'स्वागत है, Priya Sharma!' : 'Welcome back, Priya Sharma!');
-      if (onSuccess) onSuccess(demoUser);
-    }, 450);
-  };
-
   const validate = () => {
     const errs = {};
     if (mode === 'register') {
@@ -199,25 +182,6 @@ export const LoginForm = ({
         </div>
       )}
 
-      {/* 1-Click Quick Demo Pill */}
-      <button
-        type="button"
-        onClick={handleQuickDemo}
-        disabled={isLoading}
-        className="w-full flex items-center justify-center gap-2 py-2.5 px-4 mb-4 bg-paper-warm hover:bg-rule/40 border border-rule rounded-xl text-xs font-semibold text-ink transition-all shadow-xs group"
-      >
-        <Sparkles size={15} className="text-marigold group-hover:scale-110 transition-transform" />
-        <span>{lang === 'hi' ? '1-क्लिक डेमो साइन इन (Priya Sharma)' : '1-Click Instant Demo Login (Priya Sharma)'}</span>
-      </button>
-
-      {/* Standard Divider */}
-      <div className="relative flex items-center justify-center my-4">
-        <div className="border-t border-rule w-full" />
-        <span className="bg-white px-3 text-[10px] font-bold uppercase tracking-widest text-muted absolute">
-          {lang === 'hi' ? 'या' : 'OR'}
-        </span>
-      </div>
-
       {serverError && (
         <div className="mb-4 p-2.5 rounded-xl bg-red-50 border border-red-200 text-xs text-red-600 font-medium animate-fadeIn">
           {serverError}
@@ -230,7 +194,7 @@ export const LoginForm = ({
             <AuthFormField
               id="auth-name"
               label={lang === 'hi' ? 'पूरा नाम' : 'Full Name'}
-              placeholder="e.g. Priya Sharma"
+              placeholder="e.g. Rahul Verma"
               value={name}
               onChange={(e) => {
                 setName(e.target.value);

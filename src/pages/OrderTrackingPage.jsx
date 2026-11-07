@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useApp } from '../context/AppContext';
 import { PRODUCTS } from '../data/catalog';
 import { 
@@ -7,17 +7,14 @@ import {
   Truck, 
   CheckCircle2, 
   MapPin, 
-  Clock, 
-  HelpCircle, 
   MessageSquare,
   ChevronRight,
-  ShieldCheck,
-  RefreshCw,
-  ArrowLeft
+  ArrowLeft,
+  ShoppingBag
 } from 'lucide-react';
 
 export const OrderTrackingPage = () => {
-  const { activeOrderId, orders, navigateTo, goBack, lang, t, showToast } = useApp();
+  const { activeOrderId, orders, navigateTo, goBack, lang, t } = useApp();
 
   const currentOrder = orders.find((o) => o.orderId === activeOrderId) || orders[0];
 
@@ -26,50 +23,87 @@ export const OrderTrackingPage = () => {
     {
       id: 'placed',
       title: t('orderPlaced'),
-      time: '06 Sep, 10:15 AM',
+      time: currentOrder?.date ? `${currentOrder.date}, 10:15 AM` : 'Today, 10:15 AM',
       desc: lang === 'hi' ? 'ऑर्डर प्राप्त हुआ और कारीगर को सौंपा गया' : 'Order verified and assigned to botanical artisan'
     },
     {
       id: 'being_handcrafted',
       title: t('beingHandcrafted'),
-      time: '06 Sep, 11:30 AM',
+      time: 'In Progress',
       desc: lang === 'hi' ? 'पौधों का चुनाव और मिनिएचर लैंडस्केप असेंबली जारी' : 'Curating live succulents, assembling tray & adding figurines'
     },
     {
       id: 'packed',
       title: t('packedDispatched'),
-      time: '07 Sep, 04:00 PM',
+      time: 'Expected Tomorrow',
       desc: lang === 'hi' ? 'हाइड्रो-जेल रूट प्रोटेक्शन और शॉक-प्रूफ बॉक्स में पैक' : 'Secured in shock-proof transit box with root-hydration gel'
     },
     {
       id: 'out_for_delivery',
       title: t('outForDelivery'),
-      time: '10 Sep, 08:30 AM',
-      desc: lang === 'hi' ? 'डिलीवरी पार्टनर आपके पते के लिए निकल चुका है' : 'Courier partner is out for doorstep delivery'
+      time: 'Upcoming',
+      desc: lang === 'hi' ? 'डिलीवरी पार्टनर आपके पते के लिए निकलेगा' : 'Courier partner assigned for doorstep delivery'
     },
     {
       id: 'delivered',
       title: t('delivered'),
-      time: '10 Sep, 02:15 PM',
-      desc: lang === 'hi' ? 'सफलतापूर्वक हैंडओवर किया गया' : 'Handed over securely to customer'
+      time: 'Estimated 3-5 days',
+      desc: lang === 'hi' ? 'सफलतापूर्वक हैंडओवर' : 'Secure handover at your doorstep'
     }
   ];
 
-  // Simulator for demo purposes
-  const [currentStatusIndex, setCurrentStatusIndex] = useState(() => {
-    if (currentOrder?.status === 'placed') return 0;
-    if (currentOrder?.status === 'being_handcrafted') return 1;
-    if (currentOrder?.status === 'packed') return 2;
-    if (currentOrder?.status === 'out_for_delivery') return 3;
-    if (currentOrder?.status === 'delivered') return 4;
-    return 1;
-  });
-
-  const handleSimulateNextStep = () => {
-    const nextIdx = (currentStatusIndex + 1) % TRACKING_STEPS.length;
-    setCurrentStatusIndex(nextIdx);
-    showToast(lang === 'hi' ? `स्टेटस अपडेट: ${TRACKING_STEPS[nextIdx].title}` : `Status updated to: ${TRACKING_STEPS[nextIdx].title}`);
+  // Map order status to progress index
+  const getStatusIndex = (status) => {
+    switch (status) {
+      case 'placed': return 0;
+      case 'being_handcrafted': return 1;
+      case 'packed': return 2;
+      case 'out_for_delivery': return 3;
+      case 'delivered': return 4;
+      default: return 0;
+    }
   };
+
+  const currentStatusIndex = getStatusIndex(currentOrder?.status);
+
+  if (!currentOrder) {
+    return (
+      <div className="order-tracking-page py-6">
+        <div className="container max-w-2xl mx-auto">
+          <div className="breadcrumb-bar mb-3">
+            <button 
+              onClick={goBack} 
+              className="pdp-back-btn flex items-center gap-1"
+              title={t('back')}
+            >
+              <ArrowLeft size={16} />
+              <span>{t('back')}</span>
+            </button>
+          </div>
+
+          <div className="tracking-main-card p-8 border rounded-md bg-white text-center">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-surface-muted flex items-center justify-center text-forest">
+              <ShoppingBag size={32} />
+            </div>
+            <h2 className="text-xl font-bold text-forest mb-2">
+              {lang === 'hi' ? 'अभी कोई सक्रिय ऑर्डर नहीं है' : 'No Active Orders Found'}
+            </h2>
+            <p className="text-xs text-muted mb-6 max-w-sm mx-auto">
+              {lang === 'hi' 
+                ? 'आपने अभी तक कोई ऑर्डर नहीं दिया है। हमारे हस्तनिर्मित मिनिएचर प्लांट्स और बोन्साई ट्रे देखें।' 
+                : 'You have not placed any orders yet. Discover our living miniature garden art crafted with love.'}
+            </p>
+            <button 
+              onClick={() => navigateTo('home')}
+              className="btn btn-primary px-6 py-2.5 text-sm"
+            >
+              {lang === 'hi' ? 'पौधे और ट्रे गार्डन देखें' : 'Explore Miniature Gardens'}
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="order-tracking-page py-4">
@@ -89,7 +123,7 @@ export const OrderTrackingPage = () => {
           <ChevronRight size={14} className="text-muted" />
           <button onClick={() => navigateTo('account')} className="breadcrumb-link">{t('orders')}</button>
           <ChevronRight size={14} className="text-muted" />
-          <span className="breadcrumb-current">{currentOrder?.orderId || 'RB-2026-89412'}</span>
+          <span className="breadcrumb-current">{currentOrder.orderId}</span>
         </div>
 
         <div className="tracking-main-card p-4 border rounded-md bg-white">
@@ -97,15 +131,35 @@ export const OrderTrackingPage = () => {
           <div className="flex items-center justify-between border-b pb-3 mb-4 flex-wrap gap-2">
             <div>
               <span className="text-xs text-muted uppercase tracking-wider">{t('orderId')}</span>
-              <h2 className="text-lg font-bold text-forest">{currentOrder?.orderId || 'RB-2026-89412'}</h2>
-              <span className="text-xs text-muted">Placed on {currentOrder?.date || '06 Sep 2026'}</span>
+              <h2 className="text-lg font-bold text-forest">{currentOrder.orderId}</h2>
+              <span className="text-xs text-muted">
+                {lang === 'hi' ? 'ऑर्डर की तारीख:' : 'Placed on'} {currentOrder.date}
+              </span>
             </div>
 
             <div className="tracking-sla-pill p-2 bg-surface-muted rounded text-right text-xs">
               <span className="text-muted block">{t('estimatedDelivery')}</span>
-              <strong className="text-forest text-sm font-bold">{currentOrder?.estimatedArrival || 'Thu, 10 Sep'}</strong>
+              <strong className="text-forest text-sm font-bold">{currentOrder.estimatedArrival || 'In 3-5 Days'}</strong>
             </div>
           </div>
+
+          {/* Delivery Address Information */}
+          {currentOrder.address && (
+            <div className="delivery-destination-card mb-4 p-3 bg-surface-muted rounded border text-xs">
+              <div className="flex items-center gap-1.5 font-bold text-forest mb-1">
+                <MapPin size={14} />
+                <span>{lang === 'hi' ? 'डिलीवरी का पता' : 'Delivery Address'}</span>
+              </div>
+              <p className="text-ink">
+                {currentOrder.address.name && <strong>{currentOrder.address.name} — </strong>}
+                {currentOrder.address.line1}
+                {currentOrder.address.line2 ? `, ${currentOrder.address.line2}` : ''}, {currentOrder.address.city} - {currentOrder.address.pincode}
+              </p>
+              {currentOrder.address.phone && (
+                <span className="text-muted block mt-0.5">Phone: {currentOrder.address.phone}</span>
+              )}
+            </div>
+          )}
 
           {/* Blinkit-Style Live Milestone Timeline */}
           <div className="tracking-timeline-container py-2">
@@ -146,23 +200,11 @@ export const OrderTrackingPage = () => {
             </div>
           </div>
 
-          {/* Interactive Simulation Button for Testing */}
-          <div className="simulator-banner p-3 my-3 bg-surface-muted border rounded flex items-center justify-between">
-            <div className="flex items-center gap-2 text-xs">
-              <RefreshCw size={14} className="text-forest" />
-              <span>{lang === 'hi' ? 'डेमो सिमुलेटर: अगला ट्रांजिट स्टेप चेक करें' : 'Demo Mode: Advance milestone status'}</span>
-            </div>
-            <button 
-              className="btn btn-outline-neutral btn-sm text-xs"
-              onClick={handleSimulateNextStep}
-            >
-              {lang === 'hi' ? 'अगला स्टेप टेस्ट करें' : 'Simulate Next Step'}
-            </button>
-          </div>
-
           {/* Order Items Snapshot */}
           <div className="order-items-snapshot mt-4 pt-3 border-t">
-            <h4 className="text-xs font-bold uppercase text-muted mb-2">{lang === 'hi' ? 'ऑर्डर में शामिल वस्तुएं' : 'Items in this Shipment'}</h4>
+            <h4 className="text-xs font-bold uppercase text-muted mb-2">
+              {lang === 'hi' ? 'ऑर्डर में शामिल वस्तुएं' : 'Items in this Shipment'}
+            </h4>
             {currentOrder?.items?.map((item, idx) => {
               const product = PRODUCTS.find((p) => p.id === item.productId) || PRODUCTS[0];
               const pName = lang === 'hi' && product.name_hi ? product.name_hi : product.name;
@@ -193,7 +235,7 @@ export const OrderTrackingPage = () => {
             </div>
             <button 
               className="btn btn-whatsapp btn-sm flex items-center gap-1"
-              onClick={() => window.open('https://api.whatsapp.com/send?phone=919876543210', '_blank')}
+              onClick={() => window.open('https://www.whatsapp.com/catalog/918527733901/?app_absent=0', '_blank')}
             >
               <MessageSquare size={14} />
               <span>WhatsApp</span>

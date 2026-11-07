@@ -22,10 +22,12 @@ export const CheckoutPage = () => {
     discountSavings, 
     deliveryFee, 
     addresses, 
-    setAddresses, 
+    saveAddress,
     selectedAddressId, 
     setSelectedAddressId, 
     placeOrder, 
+    user,
+    pincode,
     navigateTo, 
     goBack,
     lang, 
@@ -34,37 +36,42 @@ export const CheckoutPage = () => {
   } = useApp();
 
   const [paymentMethod, setPaymentMethod] = useState('COD'); // COD | UPI | Card | NetBanking
-  const [isAddingAddress, setIsAddingAddress] = useState(false);
+  const [isAddingAddress, setIsAddingAddress] = useState(() => addresses.length === 0);
   const [newAddr, setNewAddr] = useState({
     label: 'Home',
-    name: 'Priya Sharma',
-    phone: '9876543210',
+    name: user?.name && user.name !== 'Guest User' ? user.name : '',
+    phone: user?.phone || '',
     line1: '',
     line2: '',
-    pincode: '110001',
-    city: 'New Delhi',
-    state: 'Delhi'
+    pincode: pincode || '110001',
+    city: '',
+    state: ''
   });
 
-  const handleAddNewAddressSubmit = (e) => {
+  const handleAddNewAddressSubmit = async (e) => {
     e.preventDefault();
-    if (!newAddr.line1 || !newAddr.pincode) {
-      showToast('Please fill all required address fields');
+    if (!newAddr.name.trim() || !newAddr.phone.trim() || !newAddr.line1.trim() || !newAddr.pincode.trim() || !newAddr.city.trim()) {
+      showToast(lang === 'hi' ? 'कृपया सभी आवश्यक फ़ील्ड भरें' : 'Please fill all required address fields');
       return;
     }
-    const createdId = `addr-${Date.now()}`;
-    const newAddressObj = {
+
+    const saved = await saveAddress({
       ...newAddr,
-      id: createdId,
-      isDefault: false
-    };
-    setAddresses([...addresses, newAddressObj]);
-    setSelectedAddressId(createdId);
-    setIsAddingAddress(false);
-    showToast('New address saved!');
+      isDefault: addresses.length === 0
+    });
+
+    if (saved) {
+      setSelectedAddressId(saved.id);
+      setIsAddingAddress(false);
+    }
   };
 
   const handleFinalOrderSubmit = () => {
+    if (addresses.length === 0 && !selectedAddressId) {
+      showToast(lang === 'hi' ? 'कृपया पहले अपना डिलीवरी पता दर्ज करें' : 'Please enter your delivery address first');
+      setIsAddingAddress(true);
+      return;
+    }
     placeOrder(paymentMethod);
   };
 
@@ -116,29 +123,45 @@ export const CheckoutPage = () => {
               {/* Saved Address Selector */}
               {!isAddingAddress ? (
                 <div className="saved-addresses-list">
-                  {addresses.map((addr) => (
-                    <label 
-                      key={addr.id} 
-                      className={`address-option-card p-3 mb-2 border rounded cursor-pointer flex items-start gap-3 ${selectedAddressId === addr.id ? 'selected border-forest' : ''}`}
-                    >
-                      <input
-                        type="radio"
-                        name="addressSelection"
-                        checked={selectedAddressId === addr.id}
-                        onChange={() => setSelectedAddressId(addr.id)}
-                        className="mt-1"
-                      />
-                      <div className="address-details flex-1 text-xs">
-                        <div className="flex items-center gap-2">
-                          <strong className="text-dark font-bold text-sm">{addr.name}</strong>
-                          <span className="badge-chip">{addr.label}</span>
-                          <span className="text-muted">{addr.phone}</span>
+                  {addresses.length === 0 ? (
+                    <div className="p-4 border rounded border-dashed text-center bg-surface-muted">
+                      <p className="text-xs text-muted mb-2">
+                        {lang === 'hi' ? 'कोई सुरक्षित पता नहीं मिला' : 'No saved delivery addresses found'}
+                      </p>
+                      <button
+                        type="button"
+                        className="btn btn-primary btn-sm text-xs"
+                        onClick={() => setIsAddingAddress(true)}
+                      >
+                        <Plus size={14} className="mr-1 inline" />
+                        {lang === 'hi' ? 'नया डिलीवरी पता जोड़ें' : 'Add Delivery Address'}
+                      </button>
+                    </div>
+                  ) : (
+                    addresses.map((addr) => (
+                      <label 
+                        key={addr.id} 
+                        className={`address-option-card p-3 mb-2 border rounded cursor-pointer flex items-start gap-3 ${selectedAddressId === addr.id ? 'selected border-forest' : ''}`}
+                      >
+                        <input
+                          type="radio"
+                          name="addressSelection"
+                          checked={selectedAddressId === addr.id}
+                          onChange={() => setSelectedAddressId(addr.id)}
+                          className="mt-1"
+                        />
+                        <div className="address-details flex-1 text-xs">
+                          <div className="flex items-center gap-2">
+                            <strong className="text-dark font-bold text-sm">{addr.name}</strong>
+                            <span className="badge-chip">{addr.label}</span>
+                            <span className="text-muted">{addr.phone}</span>
+                          </div>
+                          <p className="text-secondary mt-1">{addr.line1}{addr.line2 ? `, ${addr.line2}` : ''}</p>
+                          <p className="text-secondary">{addr.city}{addr.state ? `, ${addr.state}` : ''} - <strong>{addr.pincode}</strong></p>
                         </div>
-                        <p className="text-secondary mt-1">{addr.line1}, {addr.line2}</p>
-                        <p className="text-secondary">{addr.city}, {addr.state} - <strong>{addr.pincode}</strong></p>
-                      </div>
-                    </label>
-                  ))}
+                      </label>
+                    ))
+                  )}
                 </div>
               ) : (
                 /* Inline Add Address Form */
