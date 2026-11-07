@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { useApp } from '../context/AppContext';
 import { PRODUCTS } from '../data/catalog';
-import { ArrowLeft, CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 import { supabase, isSupabaseConfigured } from '../lib/supabase';
 
 export const LoginPage = () => {
@@ -229,18 +229,6 @@ export const LoginPage = () => {
 
   return (
     <div className="canva-login-container">
-      {/* Top Floating Bar */}
-      <div className="canva-top-bar">
-        <button 
-          onClick={goBack} 
-          className="canva-back-btn"
-          aria-label="Back to store"
-        >
-          <ArrowLeft size={16} />
-          <span>{lang === 'hi' ? 'दुकान पर वापस जाएं' : 'Back to Store'}</span>
-        </button>
-      </div>
-
       {/* Moving Wall Background with Continuous Scrolling Columns */}
       <div className="canva-wall-wrapper">
         <div className="canva-wall-column canva-col-up-1">
@@ -264,7 +252,7 @@ export const LoginPage = () => {
       <div className="canva-login-center-card">
         {/* Header */}
         <div className="auth-modal-header" style={{ paddingBottom: '16px' }}>
-          <div className="auth-logo-badge" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px' }}>
+          <div className="auth-logo-badge" onClick={() => navigateTo('home')} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', cursor: 'pointer' }} title="Return to store">
             <img 
               src="/logo.png" 
               alt="Roots & Bloom" 

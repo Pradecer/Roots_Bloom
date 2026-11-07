@@ -75,19 +75,19 @@ export const App = () => {
         </div>
       )}
 
-      {/* Main Header */}
-      <Header />
+      {/* Main Header (Hidden on dedicated login page) */}
+      {currentPage !== 'login' && <Header />}
 
       {/* Page Content Body */}
       <main className="main-content">
         {renderPage()}
       </main>
 
-      {/* Footer (Dark Luxury Homage Style) */}
-      <Footer />
+      {/* Footer (Hidden on dedicated login page) */}
+      {currentPage !== 'login' && <Footer />}
 
-      {/* Mobile Bottom Navigation Bar */}
-      <BottomNav />
+      {/* Mobile Bottom Navigation Bar (Hidden on dedicated login page) */}
+      {currentPage !== 'login' && <BottomNav />}
 
       {/* Global Modals */}
       <PincodeModal />
